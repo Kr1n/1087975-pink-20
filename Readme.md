@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Григорий Цуриков](https://up.htmlacademy.ru/adaptive/20/user/1087975).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
 
 ---
 
