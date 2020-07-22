@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head class="page">
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
+<head class="page">
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 <body class="page__body">
   <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="74" height="23" alt="Логотип">
-      </a>
+    <a class="page-header__logo">
+      <img src="img/logo.svg" width="74" height="23" alt="Логотип">
+    </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Html academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Пинк - Сайт фотоприложения для раскрашивания серых будней</h1>
@@ -39,22 +39,24 @@
       <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
       <a class="intro__link" href="#">Скачать приложение</a>
       <ul class="intro__list">
-        <li class="intro__list-item">
+        <li class="intro__item">
           <a href="#">
             <span class="visually-hidden">MacOs</span>
           </a>
         </li>
-        <li class="intro__list-item">
+        <li class="intro__item">
           <a href="#">
             <span class="visually-hidden">Android</span>
           </a>
         </li>
-        <li class="intro__list-item">
+        <li class="intro__item">
           <a href="#">
             <span class="visually-hidden">Windows</span>
           </a>
         </li>
       </ul>
+
+      <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
 
     <section class="info">
@@ -62,21 +64,21 @@
       <p class="info__text">Устали от серости мегаполиса?</p>
       <p class="info__text">Нам есть, что вам предложить!</p>
       <dl class="info__list">
-        <div class="info__list-item">
-          <dt class="info__list-header">Поднимает настроение</dt>
-          <dd class="info__list-text">
+        <div class="info__item">
+          <dt class="info__item-header">Поднимает настроение</dt>
+          <dd class="info__item-text">
             Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           </dd>
         </div>
-        <div class="info__list-item">
-          <dt class="info__list-header">Меняет мир вокруг</dt>
-          <dd class="info__list-text">
+        <div class="info__item">
+          <dt class="info__item-header">Меняет мир вокруг</dt>
+          <dd class="info__item-text">
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </dd>
         </div>
-        <div class="info__list-item">
-          <dt class="info__list-header">Заводит новых друзей</dt>
-          <dd class="info__list-text">
+        <div class="info__item">
+          <dt class="info__item-header">Заводит новых друзей</dt>
+          <dd class="info__item-text">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </dd>
         </div>
@@ -85,67 +87,67 @@
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews__wrapper reviews-slider">
-        <ul class="reviews-slider__list">
-          <li class="reviews-slider__item">
-            <h3 class="reviews-slider__item-header">Николай Петров</h3>
-            <p class="reviews-slider__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <div class="reviews__wrapper slider">
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item">
+            <h3 class="reviews__item-header">Николай Петров</h3>
+            <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul>
+        <p class="slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </div>
-      <p class="reviews-slider__toggles">
-        <button class="reviews-slider__toggle reviews-slider__toggle--active" type="button">1</button>
-        <button class="reviews-slider__toggle" type="button">2</button>
-        <button class="reviews-slider__toggle" type="button">3</button>
-      </p>
     </section>
 
     <section class="price">
       <h2 class="visually-hidden">Цены</h2>
       <div class="price__wrapper price-slider">
-        <ul class="price-slider__list">
+        <ul class="price__list slider">
 
-          <li class="price-slider__item">
-            <div class="price-slider__item-description">
-              <h3 class="price-slider__item-header">База</h3>
-              <p class="price-slider__item-price">1,99 USD</p>
+          <li class="price__item slider__item">
+            <div class="price__description">
+              <h3 class="price__header">База</h3>
+              <p class="price__cost">1,99 USD</p>
             </div>
-            <ul class="price-slider__advantages-list">
-              <li class="price-slider__advantages-item">Розовый фильтр</li>
-              <li class="price-slider__advantages-item">Смайлики</li>
-              <li class="price-slider__advantages-item">Комментарии</li>
+            <ul class="price__advantages advantages">
+              <li class="advantages__item advantages__item--included">Розовый фильтр<span class="visually-hidden">Да</span></li>
+              <li class="advantages__item">Смайлики<span class="visually-hidden">Нет</span></li>
+              <li class="advantages__item">Комментарии<span class="visually-hidden">Нет</span></li>
             </ul>
           </li>
 
-          <li class="price-slider__item">
-            <div class="price-slider__item-description">
-              <h3 class="price-slider__item-header">Стандарт</h3>
-              <p class="price-slider__item-price">3,99 USD</p>
+          <li class="price__item slider__item">
+            <div class="price__description">
+              <h3 class="price__header">Стандарт</h3>
+              <p class="price__cost">3,99 USD</p>
             </div>
-            <ul class="price-slider__advantages-list">
-              <li class="price-slider__advantages-item price-slider__advantages-item--included">Розовый фильтр</li>
-              <li class="price-slider__advantages-item price-slider__advantages-item--included">Смайлики</li>
-              <li class="price-slider__advantages-item">Комментарии</li>
+            <ul class="price__advantages advantages">
+              <li class="advantages__item advantages__item--included">Розовый фильтр<span class="visually-hidden">Да</span></li>
+              <li class="advantages__item advantages__item--included">Смайлики<span class="visually-hidden">Да</span></li>
+              <li class="advantages__item">Комментарии<span class="visually-hidden">Нет</span></li>
             </ul>
           </li>
 
-          <li class="price-slider__item">
-            <div class="price-slider__item-description">
-              <h3 class="price-slider__item-header">Анлим</h3>
-              <p class="price-slider__item-price">9,99 USD</p>
+          <li class="price__item slider__item">
+            <div class="price__description">
+              <h3 class="price__header">Анлим</h3>
+              <p class="price__cost">9,99 USD</p>
             </div>
-            <ul class="price-slider__advantages-list">
-              <li class="price-slider__advantages-item price-slider__advantages-item--included">Розовый фильтр</li>
-              <li class="price-slider__advantages-item price-slider__advantages-item--included">Смайлики</li>
-              <li class="price-slider__advantages-item price-slider__advantages-item--included">Комментарии</li>
+            <ul class="price__advantages advantages">
+              <li class="advantages__item advantages__item--included">Розовый фильтр<span class="visually-hidden">Да</span></li>
+              <li class="advantages__item advantages__item--included">Смайлики<span class="visually-hidden">Да</span></li>
+              <li class="advantages__item advantages__item--included">Комментарии<span class="visually-hidden">Да</span></li>
             </ul>
           </li>
 
         </ul>
-        <p class="price-slider__toggles">
-          <button class="price-slider__toggle price-slider__toggle--active" type="button">1</button>
-          <button class="price-slider__toggle" type="button">2</button>
-          <button class="price-slider__toggle-slider__toggle" type="button">3</button>
+        <p class="slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
     </section>

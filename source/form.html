@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head class="page">
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
+<head class="page">
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
@@ -15,17 +15,17 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">Html academy</a>
           </li>
         </ul>
@@ -39,62 +39,65 @@
     <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-      <div class="form__group">
-        <label class="form__input-label" for="lastname">Фамилия:</label>
-        <input class="form__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию" required>
-      </div>
 
-      <div class="form__group">
-        <label class="form__input-label" for="name">Имя:</label>
-        <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-      </div>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label class="form__label" for="lastname">Фамилия:</label>
+          <input class="form__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию" required>
+        </div>
 
-      <div class="form__group">
-        <label class="form__input-label" for="fathername">Отчество:</label>
-        <input class="form__input" type="text" id="fathername" name="fathername" placeholder="Ну и отчество тоже">
-      </div>
+        <div class="form__group">
+          <label class="form__label" for="name">Имя:</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="fathername">Отчество:</label>
+          <input class="form__input" type="text" id="fathername" name="fathername" placeholder="Ну и отчество тоже">
+        </div>
+      </fieldset>
 
       <fieldset class="form__fieldset">
         <legend class="form__fieldset-header">Ваши безбашенные достижения в путешествии</legend>
 
         <div class="form__group">
-          <label class="form__input-label" for="shark-selfie">Сделал селфи с акулой</label>
+          <label class="form__label" for="shark-selfie">Сделал селфи с акулой</label>
           <input class="form__input" type="checkbox" id="shark-selfie" name="shark-selfie" checked>
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="sunburned">Обгорел на пляже</label>
+          <label class="form__label" for="sunburned">Обгорел на пляже</label>
           <input class="form__input" type="checkbox" id="sunburned" name="sunburned" checked>
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="chuck_norris">Видел Чака Норриса</label>
+          <label class="form__label" for="chuck_norris">Видел Чака Норриса</label>
           <input class="form__input" type="checkbox" id="chuck_norris" name="chuck_norris">
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="shopping">Накупил сувениров</label>
+          <label class="form__label" for="shopping">Накупил сувениров</label>
           <input class="form__input" type="checkbox" id="shopping" name="shopping">
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="eiffel-tower">Удержал башню</label>
+          <label class="form__label" for="eiffel-tower">Удержал башню</label>
           <input class="form__input" type="checkbox" id="eiffel-tower" name="eiffel-tower" checked>
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="hotel-destroyer">Разгромил отель</label>
-          <input class="form__input" type="checkbox" id="shark-selfie" name="shark-selfie">
+          <label class="form__label" for="hotel-destroyer">Разгромил отель</label>
+          <input class="form__input" type="checkbox" id="hotel-destroyer" name="hotel-destroyer">
         </div>
       </fieldset>
 
       <div class="form__group">
-        <label class="form__input-label" for="phone">Номер телефона</label>
-        <input class="form__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+        <label class="form__label" for="phone">Номер телефона</label>
+        <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
       </div>
 
       <div class="form__group">
-        <label class="form__input-label" for="email">Адрес почты</label>
+        <label class="form__label" for="email">Адрес почты</label>
         <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту" required>
       </div>
 
@@ -102,23 +105,23 @@
         <legend class="form__fieldset-header">С каким приложением путешествовали?</legend>
 
         <div class="form__group">
-          <label class="form__input-label" for="app-ios">Pink для iOS</label>
+          <label class="form__label" for="app-ios">Pink для iOS</label>
           <input class="form__input" type="radio" id="app-ios" name="application" value="app-ios" checked>
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="app-android">Pink на Android</label>
+          <label class="form__label" for="app-android">Pink на Android</label>
           <input class="form__input" type="radio" id="app-android" name="application" value="app-android">
         </div>
 
         <div class="form__group">
-          <label class="form__input-label" for="app-win">Windows Phone</label>
+          <label class="form__label" for="app-win">Windows Phone</label>
           <input class="form__input" type="radio" id="app-win" name="application" value="app-win">
         </div>
       </fieldset>
 
       <div class="form__group">
-        <label class="form__input-label" for="emotions">Опишите свои эмоции</label>
+        <label class="form__label" for="emotions">Опишите свои эмоции</label>
         <textarea class="form__input" id="emotions" name="emotions" rows="5">Можно прям в красках, не стесняясь в выражениях
         </textarea>
       </div>
@@ -126,7 +129,7 @@
       <button type="submit">Отправить форму</button>
       <p class="form__legent">
         <span class="form__legent-akcent">*</span>
-         — обязательные поля
+        — обязательные поля
       </p>
     </form>
 
