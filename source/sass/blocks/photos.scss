@@ -1,0 +1,51 @@
+.photos{
+  background-color: $white-bg;
+  color: $text-color;
+}
+
+.photos__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photos__item{
+  background-color: $common-bg;
+}
+
+.photos__item-header{
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__item-timeleft{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photos__item-text{
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__item-likes{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-color-akcent;
+}

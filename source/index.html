@@ -3,6 +3,8 @@
 <head class="page">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -17,16 +19,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a>Главная</a>
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
+            <a class="main-nav__link"href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Html academy</a>
+            <a class="main-nav__link"href="#">Html academy</a>
           </li>
         </ul>
       </div>
@@ -37,26 +39,28 @@
 
     <section class="intro">
       <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
-      <a class="intro__link" href="#">Скачать приложение</a>
-      <ul class="intro__list">
-        <li class="intro__item">
-          <a href="#">
-            <span class="visually-hidden">MacOs</span>
-          </a>
-        </li>
-        <li class="intro__item">
-          <a href="#">
-            <span class="visually-hidden">Android</span>
-          </a>
-        </li>
-        <li class="intro__item">
-          <a href="#">
-            <span class="visually-hidden">Windows</span>
-          </a>
-        </li>
-      </ul>
+      <div class="intro__wrapper">
+        <a class="intro__link" href="#">Скачать приложение</a>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <a href="#">
+              <span class="visually-hidden">MacOs</span>
+            </a>
+          </li>
+          <li class="intro__item">
+            <a href="#">
+              <span class="visually-hidden">Android</span>
+            </a>
+          </li>
+          <li class="intro__item">
+            <a href="#">
+              <span class="visually-hidden">Windows</span>
+            </a>
+          </li>
+        </ul>
 
-      <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
 
     <section class="info">
@@ -104,8 +108,8 @@
 
     <section class="price">
       <h2 class="visually-hidden">Цены</h2>
-      <div class="price__wrapper price-slider">
-        <ul class="price__list slider">
+      <div class="price__wrapper slider">
+        <ul class="price__list slider__list">
 
           <li class="price__item slider__item">
             <div class="price__description">
@@ -173,7 +177,7 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img src="img/logo.svg" width="74" height="23" alt="Логотип">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
