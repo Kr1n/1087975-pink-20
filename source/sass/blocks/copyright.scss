@@ -1,6 +1,5 @@
-
 .copyright__text{
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -10,6 +9,7 @@
 
 .copyright__link{
   position: relative;
+
   &::before{
     background: url("../../img/logo-htmlacademy.svg") no-repeat;
     content: "";

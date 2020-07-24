@@ -1,3 +1,5 @@
+@import "variables.scss";
+@import "main.scss";
 @import "blocks/page-header.scss";
 @import "blocks/intro.scss";
 @import "blocks/info.scss";
@@ -7,28 +9,3 @@
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/photos.scss";
-
-body{
-  background: grey;
-}
-
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-a{
-  text-decoration: none;
-}
-
-.visually-hidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

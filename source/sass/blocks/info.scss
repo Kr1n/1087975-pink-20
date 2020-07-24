@@ -1,5 +1,5 @@
-.info__text{
-  font-family: Open Sans;
+.info{
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
 }
 
@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   background-color: $common-bg;
+
   &::after{
     background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
     content: "";

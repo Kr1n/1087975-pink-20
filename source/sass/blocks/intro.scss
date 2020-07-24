@@ -1,6 +1,6 @@
 .intro{
   background-color: $intro-bg;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   color: $text-color-white;
   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
@@ -11,6 +11,8 @@
   font-size: 24px;
   line-height: 120%;
   position: relative;
+  margin: 0;
+
   &::after{
     background: url("../../img/iphone-hand-mobile@1x.png") no-repeat;
     content: "";
@@ -18,7 +20,6 @@
     height: 286px;
     display: block;
   }
-  margin: 0;
 }
 
 .intro__wrapper{
