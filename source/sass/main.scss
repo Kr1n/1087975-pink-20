@@ -1,0 +1,55 @@
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src:local("Gilroy"),
+  url("../fonts/opensansbold.woff2") format("woff2"),
+  url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:local("Gilroy"),
+  url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:local("Gilroy"),
+  url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body{
+  background: grey;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+}
+

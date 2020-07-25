@@ -3,6 +3,8 @@
 <head class="page">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -17,16 +19,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a>Фотографии</a>
+            <a class="main-nav__link">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Html academy</a>
+            <a class="main-nav__link" href="#">Html academy</a>
           </li>
         </ul>
       </div>
@@ -42,7 +44,7 @@
       <ul class="photos__list">
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo photos__item-photo--panorama" src="https://via.placeholder.com/150x150" width="320" height="137" alt="Длинный узкий мост над рекой">
+            <img class="photos__item-photo photos__item-photo--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Длинный узкий мост над рекой">
           </a>
           <p class="photos__item-header">Анна
             <span class="photos__item-timeleft">
@@ -55,7 +57,7 @@
 
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Машина на фоне здания">
+            <img class="photos__item-photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина на фоне здания">
           </a>
           <p class="photos__item-header">Левон
             <span class="photos__item-timeleft">
@@ -68,7 +70,7 @@
 
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Музыкальные ударная установка">
+            <img class="photos__item-photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Музыкальные ударная установка">
           </a>
           <p class="photos__item-header">Антон
             <span class="photos__item-timeleft">
@@ -81,7 +83,7 @@
 
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Стеклянная крыша с видом на голубое небо">
+            <img class="photos__item-photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша с видом на голубое небо">
           </a>
           <p class="photos__item-header">Борис
             <span class="photos__item-timeleft">
@@ -94,7 +96,7 @@
 
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Рынок - 'Кубанская бахча'">
+            <img class="photos__item-photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок - 'Кубанская бахча'">
           </a>
           <p class="photos__item-header">Сергей
             <span class="photos__item-timeleft">
@@ -107,7 +109,7 @@
 
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Гдето в горах">
+            <img class="photos__item-photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Гдето в горах">
           </a>
           <p class="photos__item-header">Максим
             <span class="photos__item-timeleft">
@@ -120,7 +122,7 @@
 
         <li class="photos__item">
           <a class="photos__item-link" href="#">
-            <img class="photos__item-photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Вид на крыло самолета в небе из элюминатора">
+            <img class="photos__item-photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид на крыло самолета в небе из элюминатора">
           </a>
           <p class="photos__item-header">Надежда
             <span class="photos__item-timeleft">
@@ -132,14 +134,13 @@
         </li>
 
       </ul>
-
-      <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </div>
+    <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
   </main>
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img src="img/logo.svg" width="74" height="23" alt="Логотип">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">

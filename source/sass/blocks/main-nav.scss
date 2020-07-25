@@ -1,0 +1,19 @@
+.main-nav__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $text-color-white;
+}
+
+.main-nav__wrapper{
+  background-color: $text-color;
+}
