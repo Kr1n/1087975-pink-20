@@ -3,7 +3,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   color: $text-color-white;
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
 }
 
 .intro__header{
@@ -14,7 +14,7 @@
   margin: 0;
 
   &::after{
-    background: url("../../img/iphone-hand-mobile@1x.png") no-repeat;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
     content: "";
     width: 258px;
     height: 286px;
