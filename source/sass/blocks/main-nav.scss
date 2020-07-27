@@ -16,4 +16,8 @@
 
 .main-nav__wrapper{
   background-color: $text-color;
+
+  @media (max-width: $desktop-width){
+    display: none;
+  }
 }
