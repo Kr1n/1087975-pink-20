@@ -54,7 +54,7 @@
   &::before{
     content: "";
     position: absolute;
-    background: url("../../img/icon-timer.svg") no-repeat;
+    background: url("../img/icon-timer.svg") no-repeat;
     background-size: cover;
 
     @media (min-width: $tablet-width) {
