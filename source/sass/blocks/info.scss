@@ -40,7 +40,7 @@
   display: grid;
   position: relative;
 
-  @media (min-width: $mobile-width){
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1px){
 
     &::after{
       content: "";
