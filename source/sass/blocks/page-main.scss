@@ -7,9 +7,38 @@
   color: $text-color-white;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   margin: 0;
-  min-height: 237px;
   padding-top: 102px;
   box-sizing: border-box;
+  text-align: center;
+  z-index: -1;
+
+  @media (max-width: $mobile-width-only){
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    position: relative;
+    padding-top: $menu-height-mobile + 29px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    padding-top: $menu-height-tablet + 102px;
+    padding-bottom: 104px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    padding: 0 112px;
+    padding-top: $menu-height-desktop + 114px;
+    padding-bottom: 104px;
+  }
 }
 
 .page-main__text{
@@ -21,4 +50,14 @@
   color: $text-color;
   margin: 0;
   background-color: $white-bg;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

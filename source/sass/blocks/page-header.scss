@@ -3,16 +3,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //margin-bottom: -66px;
+  position: relative;
 
   @media (max-width: $mobile-width-only){
-    height: 66px;
+    height: $menu-height-mobile;
+    margin-bottom: -$menu-height-mobile;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    height: $menu-height-tablet;
+    margin-bottom: -$menu-height-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: $menu-height-desktop;
+    margin-bottom: -$menu-height-desktop;
+  }
+}
+
+.page-header__logo{
+
+  @media (max-width: $mobile-width-only){
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
 }
-
-

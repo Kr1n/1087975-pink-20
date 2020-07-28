@@ -1,6 +1,22 @@
 .info{
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.info__text-wrapper{
+  background-color: $white-bg;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+
+  @media (min-width: $desktop-width){
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 
 .info__text{
@@ -8,8 +24,8 @@
   font-size: 24px;
   line-height: 120%;
   color: $text-color;
-  background-color: $white-bg;
   margin: 0;
+  padding-top: 24px;
 }
 
 .info__list{
@@ -17,13 +33,73 @@
   margin: 0;
   padding: 0;
   background-color: $common-bg;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 53px;
+  text-align: center;
+  display: grid;
+  position: relative;
 
-  &::after{
-    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
-    content: "";
-    width: 258px;
-    height: 286px;
-    display: block;
+  @media (max-width: $mobile-width-only){
+
+    &::after{
+      content: "";
+      background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+      width: 157px;
+      height: 286px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px)  {
+
+    grid-template-columns: 310px auto;
+    grid-template-rows: min-content min-content min-content auto;
+    text-align: left;
+
+    &::before{
+      content: "";
+      background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+      width: 268px;
+      height: 481px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    grid-template-columns: auto auto auto;
+    padding-left: 130px;
+    padding-right: 130px;
+    text-align: center;
+  }
+}
+
+
+@for $i from 1 through 3 {
+  .info__item:nth-of-type(#{$i}){
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px)  {
+      grid-column: 2/3;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before{
+        content: "";
+        background: url("../img/iphone-screen-#{$i}-desktop@1x.png") no-repeat;
+        width: 292px;
+        height: 302px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 }
 
@@ -31,6 +107,11 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
 }
 
 .info__item-text{
@@ -38,4 +119,5 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  padding-bottom: 43px;
 }

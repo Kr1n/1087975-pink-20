@@ -1,8 +1,12 @@
 // Начните писать стили здесь
 
-$mobile-width-only: 450px;
+$mobile-width-only: 659px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+
+$menu-height-mobile: 66px;
+$menu-height-tablet: 110px;
+$menu-height-desktop: 110px;
 
 $intro-bg: #1D2631;
 $menu-bg: rgba(0,0,0,0.3);
@@ -13,3 +17,5 @@ $text-color-white: #ffffff;
 $text-color-black: #000000;
 $text-color: #283645;
 $text-color-akcent: #D22856;
+
+$menu-shadow-color: rgba(255, 255, 255, 0.15);
