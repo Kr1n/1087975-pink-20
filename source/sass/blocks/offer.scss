@@ -4,14 +4,14 @@
   display: none;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $text-color-white;
     padding-bottom: 29px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width){
     background-color: $common-bg;
     padding-bottom: 120px;
   }
@@ -29,7 +29,7 @@
     box-sizing: border-box;
     text-align: center;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width){
       font-size: 96px;
       line-height: 163px;
       width: 202px;
@@ -39,7 +39,7 @@
       border: 16px solid $text-color-akcent;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width){
       font-size: 120px;
       line-height: 196px;
       width: 252px;
@@ -48,7 +48,6 @@
       bottom: 90px;
       border: 18px solid $text-color-akcent;
     }
-
   }
 
   &::before{
@@ -57,14 +56,14 @@
     background: url("../img/icon-timer.svg") no-repeat;
     background-size: cover;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width){
       width: 238px;
       height: 276px;
       left: 20px;
       bottom: 0;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width){
       width: 298px;
       height: 345px;
       left: 131px;
@@ -76,7 +75,7 @@
 .offer__header{
   margin: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     padding-top: 102px;
     font-weight: bold;
     font-size: 30px;
@@ -84,15 +83,16 @@
     color: $text-color-black;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width){
     padding-top: 115px;
+    line-height: 30px;
   }
 }
 
 .offer_text{
   margin: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     padding-top: 24px;
     font-weight: normal;
     font-size: 14px;
@@ -100,13 +100,15 @@
     color: $text-color;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width){
     padding-top: 37px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .offer_link{
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     display: block;
     padding-top: 24px;
     font-weight: normal;
@@ -116,8 +118,10 @@
     color: $text-color-akcent;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width){
     padding-top: 47px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

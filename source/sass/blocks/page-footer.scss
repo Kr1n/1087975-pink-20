@@ -2,14 +2,14 @@
   background-color: $white-bg;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width){
     padding-left: 130px;
     padding-right: 130px;
   }
@@ -23,23 +23,15 @@
 .page-footer__social{
   padding-top: 38px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     padding-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
 .page-footer__copyright{
   padding-top: 45px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     padding-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
