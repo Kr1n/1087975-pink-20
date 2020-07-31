@@ -1,32 +1,19 @@
 .page-header{
-  background-color: $menu-bg;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
-  height: $menu-height-mobile;
-  margin-bottom: -$menu-height-mobile;
+}
+
+.page-header__logo{
+  position: absolute;
+  display: flex;
+  height: $menu-height-mobile; 
+  left: 20px;
 
   @media (min-width: $tablet-width){
-    height: $menu-height-tablet;
-    margin-bottom: -$menu-height-tablet;
+    height: $menu-height-tablet; 
   }
 
   @media (min-width: $desktop-width){
     height: $menu-height-desktop;
-    margin-bottom: -$menu-height-desktop;
-  }
-}
-
-.page-header__logo{
-  padding-left: 20px;
-
-  @media (min-width: $tablet-width){
-    padding-left: 20px;
-  }
-
-  @media (min-width: $desktop-width){
-    padding-left: 130px;
-    padding-right: 130px;
+    left: 130px;
   }
 }
