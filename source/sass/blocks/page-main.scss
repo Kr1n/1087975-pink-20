@@ -11,30 +11,30 @@
   text-align: center;
   z-index: -1;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-
-  @media (min-width: $mobile-width){
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    position: relative;
-    padding-top: $menu-height-mobile + 29px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 84px;
-  }
+  background-size: cover;
+  position: relative;
+  padding-top: $menu-height-mobile + 29px;
+  padding-left: $mobile-padding-left;
+  padding-right: $mobile-padding-right;
+  padding-bottom: 84px;
 
   @media (min-width: $tablet-width){
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     font-size: 50px;
     line-height: 68px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    padding-left: $tablet-padding-left;
+    padding-right: $tablet-padding-right;
     padding-top: $menu-height-tablet + 102px;
     padding-bottom: 104px;
     font-size: 40px;
   }
 
   @media (min-width: $desktop-width){
-    padding: 0 112px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    padding-left: $desktop-padding-left;
+    padding-right: $desktop-padding-right;
     padding-top: $menu-height-desktop + 114px;
     padding-bottom: 104px;
   }
@@ -51,12 +51,27 @@
   background-color: $white-bg;
   padding-top: 54px;
   padding-bottom: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $mobile-padding-left;
+  padding-right: $mobile-padding-right;
   text-align: center;
 
   @media (min-width: $tablet-width){
     font-size: 18px;
     line-height: 30px;
+    padding-left: $tablet-padding-left;
+    padding-right: $tablet-padding-right;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: $desktop-padding-left;
+    padding-right: $desktop-padding-right;
+  }
+}
+
+.page-main__text--mobile-hidden{
+  display: none;
+
+  @media (min-width: $tablet-width){
+    display: inline;
   }
 }

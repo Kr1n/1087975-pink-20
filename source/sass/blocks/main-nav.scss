@@ -44,12 +44,16 @@
 
 
   @media (min-width: $desktop-width){
-    padding-left: 300px;
     grid-column-gap: 79px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     min-height: $menu-height-desktop;
+    max-width: 1200px;
+    padding-left: 230px;
+    padding-right: 130px;
+    margin: auto;
+    box-sizing: border-box;
   }
 }
 

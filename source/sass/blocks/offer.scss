@@ -5,17 +5,20 @@
   position: relative;
 
   @media (min-width: $tablet-width){
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     background-color: $text-color-white;
     padding-bottom: 29px;
+    padding-top: 50px;
+    padding-right: $tablet-padding-right;
   }
 
   @media (min-width: $desktop-width){
     background-color: $common-bg;
     padding-bottom: 120px;
   }
+}
 
+.offer .container{
   &::after{
     content: "24";
     position: absolute;
@@ -34,7 +37,7 @@
       line-height: 163px;
       width: 202px;
       height: 202px;
-      left: 38px;
+      left: $tablet-padding-left + 18px;
       bottom: 17px;
       border: 16px solid $text-color-akcent;
     }
@@ -44,8 +47,8 @@
       line-height: 196px;
       width: 252px;
       height: 252px;
-      left: 154px;
-      bottom: 90px;
+      left: $desktop-padding-left + 23px;
+      bottom: 22px;
       border: 18px solid $text-color-akcent;
     }
   }
@@ -59,15 +62,15 @@
     @media (min-width: $tablet-width){
       width: 238px;
       height: 276px;
-      left: 20px;
+      left: $tablet-padding-left;
       bottom: 0;
     }
 
     @media (min-width: $desktop-width){
       width: 298px;
       height: 345px;
-      left: 131px;
-      bottom: 67px;
+      left: $desktop-padding-left;
+      bottom: 0;
     }
   }
 }
@@ -126,5 +129,5 @@
 }
 
 .offer__wrapper{
-  grid-column: 2/3;
+  padding-left: 50%;
 }

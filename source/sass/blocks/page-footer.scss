@@ -1,17 +1,19 @@
-.page-footer{
+.page-footer .container{
   background-color: $white-bg;
   text-align: center;
+  padding-left: $mobile-padding-left;
+  padding-right: $mobile-padding-right;
 
   @media (min-width: $tablet-width){
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $tablet-padding-left;
+    padding-right: $tablet-padding-right;
   }
 
   @media (min-width: $desktop-width){
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: $desktop-padding-left;
+    padding-right: $desktop-padding-right;
   }
 }
 

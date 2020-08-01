@@ -9,10 +9,11 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo.svg" width="74" height="23" alt="Логотип">
-    </a>
-
+    <div class="container">
+      <a class="page-header__logo">
+        <img src="img/logo.svg" width="74" height="23" alt="Логотип">
+      </a>
+    </div>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -37,64 +38,73 @@
     <h1 class="visually-hidden">Пинк - Сайт фотоприложения для раскрашивания серых будней</h1>
 
     <section class="intro">
-      <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
-      <div class="intro__wrapper">
-        <a class="intro__link" href="#">Скачать приложение</a>
-        <ul class="intro__list">
-          <li class="intro__item">
-            <a class="intro__item-link intro__item-link--apple" href="#">
-              <span class="visually-hidden">Apple</span>
-            </a>
-          </li>
-          <li class="intro__item">
-            <a class="intro__item-link intro__item-link--android" href="#">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="intro__item">
-            <a class="intro__item-link intro__item-link--windows" href="#">
-              <span class="visually-hidden">Windows</span>
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
+        <div class="intro__wrapper">
+          <a class="intro__link" href="#">Скачать приложение</a>
+          <ul class="intro__list">
+            <li class="intro__item">
+              <a class="intro__item-link intro__item-link--apple" href="#">
+                <span class="visually-hidden">Apple</span>
+              </a>
+            </li>
+            <li class="intro__item">
+              <a class="intro__item-link intro__item-link--android" href="#">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="intro__item">
+              <a class="intro__item-link intro__item-link--windows" href="#">
+                <span class="visually-hidden">Windows</span>
+              </a>
+            </li>
+          </ul>
 
-        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
 
     <section class="info">
-      <h2 class="visually-hidden">Информация о нас</h2>
-      <div class="info__text-wrapper">
-        <p class="info__text">Устали от серости мегаполиса?</p>
-        <p class="info__text">Нам есть, что вам предложить!</p>
-      </div>
-      <dl class="info__list">
-        <div class="info__item">
-          <dt class="info__item-header">Поднимает настроение</dt>
-          <dd class="info__item-text">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </dd>
+      
+        <h2 class="visually-hidden">Информация о нас</h2>
+        <div class="info__text-wrapper">
+          <p class="info__text">Устали от серости мегаполиса?</p>
+          <p class="info__text">Нам есть, что вам предложить!</p>
         </div>
-        <div class="info__item">
-          <dt class="info__item-header">Меняет мир вокруг</dt>
-          <dd class="info__item-text">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </dd>
+        <div class="info__list-wrapper">
+          <div class="container">
+        <dl class="info__list">
+          <div class="info__item">
+            <dt class="info__item-header">Поднимает настроение</dt>
+            <dd class="info__item-text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </dd>
+          </div>
+          <div class="info__item">
+            <dt class="info__item-header">Меняет мир вокруг</dt>
+            <dd class="info__item-text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </dd>
+          </div>
+          <div class="info__item">
+            <dt class="info__item-header">Заводит новых друзей</dt>
+            <dd class="info__item-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </dd>
+          </div>
+        </dl>
         </div>
-        <div class="info__item">
-          <dt class="info__item-header">Заводит новых друзей</dt>
-          <dd class="info__item-text">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </dd>
         </div>
-      </dl>
     </section>
 
     <section class="offer">
-      <div class="offer__wrapper">
-        <h2 class="offer__header">Эффект на 24 часа!</h2>
-        <p class="offer_text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a href="#" class="offer_link">Узнать больше об исследовании</a>
+      <div class="container">
+        <div class="offer__wrapper">
+          <h2 class="offer__header">Эффект на 24 часа!</h2>
+          <p class="offer_text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="offer_link">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
 
@@ -185,34 +195,36 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">https://htmlacademy.ru/</span>
+    <div class="container">
+      <a class="page-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
       </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">https://htmlacademy.ru/</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
