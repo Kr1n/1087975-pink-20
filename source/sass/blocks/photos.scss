@@ -81,7 +81,13 @@
 }
 
 .photos__item-photo{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.photos__item-photo img{
   width: 100%;
+
 }
 
 .photos__item-header{
@@ -91,8 +97,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  
-
 }
 
 .photos__item-timeleft{
@@ -122,14 +126,4 @@
   text-transform: uppercase;
   color: $text-color-akcent;
   margin-top: auto;
-}
-
-.photos__item-photo--full-width{
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  box-sizing: border-box;
 }
