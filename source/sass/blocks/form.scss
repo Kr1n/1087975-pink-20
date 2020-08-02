@@ -179,6 +179,14 @@
 	color: $text-color-akcent;
 }
 
+.form__legent-akcent--only-desktop{
+	display: none;
+	
+  @media (min-width: $desktop-width){
+  	display: inline;
+  }
+}
+
 .form__group--inline{
 	@media (min-width: $tablet-width){
 		display: flex;
