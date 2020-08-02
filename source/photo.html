@@ -163,23 +163,35 @@
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="upload__input-wrapper">
               <div class="upload__button-list upload__button-list--only-mobile">
-                <button class="upload__button-item upload__button-item--crop upload__button-item--selected" type="button">Кроп</button>
-                <button class="upload__button-item upload__button-item--fill" type="button">Заливка</button>
-                <button class="upload__button-item upload__button-item--contrast" type="button">Контраст</button>
+                <button class="upload__button-item upload__button-item--crop upload__button-item--selected" type="button">
+                  <span class="visually-hidden">Кроп</span>
+                </button>
+                <button class="upload__button-item upload__button-item--fill" type="button">
+                  <span class="visually-hidden">Заливка</span>
+                </button>
+                <button class="upload__button-item upload__button-item--contrast" type="button">
+                  <span class="visually-hidden">Контраст</span>
+                </button>
               </div>
 
               <div class="upload__input-group upload__input-group--selected">
-                <button class="upload__input-button upload__input-button--crop" type="button">Кроп</button>
+                <button class="upload__input-button upload__input-button--crop" type="button">
+                  <span class="visually-hidden">Кроп</span>
+                </button>
                 <input class="upload__input upload__input--crop" type="range" name="crop" id="crop">
                 <label class="visually-hidden" for="crop">Кроп</label>
               </div>
               <div class="upload__input-group">
-                <button class="upload__input-button upload__input-button--fill" type="button">Заливка</button>
+                <button class="upload__input-button upload__input-button--fill" type="button">
+                  <span class="visually-hidden">Заливка</span>
+                </button>
                 <input class="upload__input upload__input--fill" type="range" name="fill" id="fill">
                 <label class="visually-hidden" for="fill">Заливка</label>
               </div>
               <div class="upload__input-group">
-                <button class="upload__input-button upload__input-button--contrast" type="button">Контраст</button>
+                <button class="upload__input-button upload__input-button--contrast" type="button">
+                  <span class="visually-hidden">Контраст</span>
+                </button>
                 <input class="upload__input upload__input--contrast" type="range" name="contrast" id="contrast">
                 <label class="visually-hidden" for="contrast">Контраст</label>
               </div>
