@@ -39,3 +39,9 @@ a{
   margin-right: -50vw;
   box-sizing: border-box;
 }
+
+.mobile-only{
+  @media (min-width: $tablet-width){
+    display: none;
+  }
+}
