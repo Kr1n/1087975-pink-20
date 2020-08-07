@@ -41,7 +41,6 @@
 	}
 }
 
-.form__fieldset-header,
 .form__label--akcent{
 	border: none;
 	padding: 0;
@@ -52,17 +51,6 @@
 	line-height: 18px;
 	text-transform: uppercase;
 	background-color: transparent;
-}
-
-.form__fieldset-header{
-	text-align: center;
-	padding-top: 50px;
-	padding-left: 31px;
-	padding-right: 31px;
-
-	@media (min-width: $tablet-width){
-		padding-top: 0px;
- 	}
 }
 
 .form__label{
@@ -79,13 +67,18 @@
 }
 
 .form__input{
+	position: relative;
 	padding-left: 20px;
-	padding-top: 17px;
-	padding-bottom: 17px;
+	padding-top: 14px;
+	padding-bottom: 15px;
 	margin-bottom: 29px;
 	width: 100%;
 	border: 2px solid $input-border-color;
 	box-sizing: border-box;
+
+	@media (min-width: $tablet-width){
+		margin-bottom: 22px;
+	}
 }
 
 .form__group--checkbox .form__input,
@@ -127,7 +120,13 @@
 	resize: none;
 }
 
-.form__group--textarea .form__label{
+.form__fieldset-header{
+	display: block;
+	text-align: center;
+	padding-left: 31px;
+	padding-right: 31px;
+	padding-bottom: 42px;
+
 	@media (min-width: $tablet-width){
 		margin-top: -53px;
 		padding-bottom: 42px;
@@ -248,5 +247,67 @@
 		order: -1;
 		display: flex;
     	flex-direction: column;
+	}
+}
+
+.form__wrapper-achievement{
+	@media (min-width: $desktop-width){
+		display: grid;
+	    grid-template-rows: 1fr 1fr;
+	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-auto-flow: column;
+	    grid-column-gap: 50px;
+	}
+}
+
+
+
+.form__wrapper-contacts{
+	@media (min-width: $desktop-width){
+		display: grid;
+		grid-gap: 70px;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.form__group--contacts{
+	@media (min-width: $tablet-width){
+	    display: flex;
+	    flex-direction: column-reverse;
+	}
+}
+
+.form__input-icon{
+	position: relative;
+
+	@media (min-width: $tablet-width){
+		&::after{
+			content: "";
+			position: absolute;
+			width: 59px;
+			height: 59px;
+			right: 2px;
+			top: 2px;
+		}
+	}
+}
+
+.form__input-icon--phone{
+	@media (min-width: $tablet-width){
+		&::after{
+			background: url("../img/icon-phone.svg"),$input-border-color;
+			background-repeat: no-repeat, no-repeat;
+			background-position: center center;
+		}
+	}
+}
+
+.form__input-icon--email{
+	@media (min-width: $tablet-width){
+		&::after{
+			background: url("../img/icon-mail.svg"),$input-border-color;
+			background-repeat: no-repeat, no-repeat;
+			background-position: center center;
+		}
 	}
 }

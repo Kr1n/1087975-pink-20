@@ -45,3 +45,9 @@ a{
     display: none;
   }
 }
+
+.mobile-hidden{
+  @media (max-width: $tablet-width - 1px){
+    display: none;
+  }
+}

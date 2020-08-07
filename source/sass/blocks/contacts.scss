@@ -31,14 +31,37 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	@media (min-width: $tablet-width){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+  	}
+
+  	@media (min-width: $desktop-width){
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 .contacts__item{
 	padding-bottom: 31px;
-}
 
-.contacts__item:nth-last-of-type(1){
+ 	&:nth-last-of-type(1){
 	padding-bottom: 0px;
+
+		@media (min-width: $tablet-width){
+			grid-column: 1 / -1;
+	  	}
+
+	  	@media (min-width: $desktop-width){
+			grid-column: auto;
+	  	}
+	}
+
+	&:nth-last-of-type(2){
+		@media (min-width: $desktop-width){
+			order: 1;
+		}
+	}
 }
 
 .contacts__item-text{

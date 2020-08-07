@@ -19,17 +19,18 @@
   		padding-left: $desktop-padding-left;
 		padding-right: $desktop-padding-right;
   	}
+  	overflow: hidden;
 }
 
 .price__list{
-	width: 300%;
+	width: auto;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding-bottom: 40px;
-	transform: translate(-33.3%);
+	transform: translate(calc(-100vw + #{$mobile-padding-right} + #{$mobile-padding-left}));
 
 	@media (min-width: $tablet-width){
 		width: 100%;
@@ -44,6 +45,9 @@
 	box-sizing: border-box;
 
 	grid-template-rows: 1fr 1fr;
+	@media (max-width: $tablet-width){
+		width: calc(100vw - #{$mobile-padding-right} - #{$mobile-padding-left)});
+	}
 }
 
 .price__description{
