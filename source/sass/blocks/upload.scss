@@ -1,0 +1,233 @@
+.upload{
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-style: normal;
+	background-color: $common-bg;
+	padding-bottom: 41px;
+	padding-top: 20px;
+	padding-left: $mobile-padding-left;
+	padding-right: $mobile-padding-right;
+
+	@media (min-width: $tablet-width){
+	    padding-left: $tablet-padding-left;
+		padding-right: $tablet-padding-right;
+		padding-bottom: 54px;
+		padding-top: 57px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 50px;
+  	}
+
+  	@media (min-width: $desktop-width){
+  		margin-left: $desktop-padding-left;
+		margin-right: $desktop-padding-right;
+
+		padding-left: 80px;
+		padding-right: 60px;
+		padding-bottom: 61px;
+		padding-top: 53px;
+		grid-template-columns: 300px 1fr;
+		grid-gap: 90px;
+  	}
+}
+
+.upload__form{
+	@media (min-width: $tablet-width){
+		display: grid;
+		align-content: space-between;
+	}
+
+  	@media (min-width: $desktop-width){
+
+  	}
+}
+
+.upload__link{
+	display: block;
+	margin-bottom: 41px;
+
+	@media (min-width: $tablet-width){
+		margin-bottom: 0;
+	}
+}
+
+.upload__image{
+	width: 100%;
+}
+
+.upload__input-label{
+	display: block;
+	text-align: center;
+	order: -1;
+	position: relative;
+
+	@media (min-width: $tablet-width){
+		order: unset;
+
+		&::after{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			left: 0;
+			bottom: 0;
+			background-color: $text-color;
+			opacity: 0.1;
+		}
+	}
+
+  	@media (min-width: $desktop-width){
+
+  	}
+}
+
+.upload__input-group{
+	display: none;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 27px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	position: relative;
+
+	&::after{
+		content: "";
+		position: absolute;
+		width: 100vw;
+		height: 1px;
+		left: 0;
+		bottom: 0;
+		background-color: $text-color;
+		opacity: 0.1;
+	}
+
+	@media (min-width: $tablet-width){
+		display: grid;
+		grid-template-columns: 50px 1fr;
+		align-items: center;
+		padding: 0;
+		padding-right: 20px;
+		min-height: 72px;
+		grid-gap: 29px;
+
+		&::after{
+			width: 100%;
+		}
+	}
+
+  	@media (min-width: $desktop-width){
+  		padding: 0;
+  		padding-right: 30px;
+  	}
+}
+
+.upload__input-group--selected{
+	display: block;
+
+	@media (min-width: $tablet-width){
+		display: grid;
+	}
+}
+
+.upload__input{
+	width: 100%;
+}
+
+.upload__submit,
+.upload__button{
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	background-color: transparent;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	grid-column: 1 / -1;
+}
+
+.upload__submit{
+	color: $text-color-akcent;
+	border: 3px solid $text-color-akcent;
+	margin-bottom: 12px;
+
+	@media (min-width: $desktop-width){
+		margin-bottom: 0px;
+	}
+}
+
+.upload__button{
+	color: $text-color;
+	border: 3px solid $text-color;
+	opacity: 0.1;
+
+	@media (min-width: $desktop-width){
+	    margin-left: 44px;
+	}
+}
+
+.upload__button-item{
+	background-color: red;
+	border: none;
+	width: 75px;
+	height: 75px;
+}
+
+.upload__button-item--crop{
+	background: url("../img/icon-editor-crop.svg") center center no-repeat;
+}
+
+.upload__button-item--fill{
+	background: url("../img/icon-editor-fill.svg") center center no-repeat;
+}
+
+.upload__button-item--contrast{
+	background: url("../img/icon-editor-contrast.svg") center center no-repeat;
+}
+
+.upload__button-list{
+	display: flex;
+    justify-content: space-around;
+
+	@media (min-width: $tablet-width){
+		display: none;
+	}
+}
+
+.upload__input-button{
+	display: none;
+
+	@media (min-width: $tablet-width){
+		display: block;
+		background-color: red;
+		border: none;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.upload__button-wrapper{
+	margin-top: 38px;
+
+	@media (min-width: $tablet-width){
+		margin-top: 0;
+	}
+
+	@media (min-width: $desktop-width){
+		display: flex;
+	}
+}
+
+.upload__input-button--crop{
+	background: url("../img/icon-editor-crop.svg") center center no-repeat;
+}
+
+.upload__input-button--fill{
+	background: url("../img/icon-editor-fill.svg") center center no-repeat;
+}
+
+.upload__input-button--contrast{
+	background: url("../img/icon-editor-contrast.svg") center center no-repeat;
+}

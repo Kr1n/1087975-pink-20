@@ -1,7 +1,91 @@
+.main-nav{
+  min-height: $menu-height-mobile;
+  margin-bottom: -$menu-height-mobile;
+  background-color: $menu-bg;
+
+  @media (min-width: $tablet-width){
+    min-height: $menu-height-tablet;
+    margin-bottom: -$menu-height-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    min-height: $menu-height-desktop;
+    margin-bottom: -$menu-height-desktop;
+  }
+}
+
+.main-nav__toggle{
+  display: block;
+  cursor: pointer;
+  height: $menu-height-mobile;
+  width: 90px;
+  background-color: red;
+  background: url("../img/icon-menu-burger.svg") no-repeat center;
+  background-size: 50px 24px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width){
+    height: $menu-height-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+}
+
 .main-nav__list{
   margin: 0;
   padding: 0;
   list-style: none;
+  display: none;
+
+
+  @media (min-width: $desktop-width){
+    grid-column-gap: 79px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-height: $menu-height-desktop;
+    max-width: 1200px;
+    padding-left: 230px;
+    padding-right: 130px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+}
+
+.main-nav--opened{
+  @media (max-width: $desktop-width - 1px){
+    background-color: $text-color;
+    margin-bottom: 0;
+  }
+}
+
+.main-nav--opened .main-nav__list{
+  @media (max-width: $desktop-width - 1px){
+    display: block;
+    position: relative;
+  }
+}
+
+.main-nav__item{
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: $desktop-width - 1px){
+    margin-top: 1px;
+    box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px $menu-shadow-color;
+  }
+}
+
+.main-nav__item:nth-of-type(1){
+  @media (max-width: $desktop-width - 1px){
+   box-shadow: 0px 1px 0px #000000,0px -1px 0px #000000, inset 0px 1px 0px $menu-shadow-color;
+  }
 }
 
 .main-nav__link{
@@ -12,8 +96,14 @@
   line-height: 32px;
   text-transform: uppercase;
   color: $text-color-white;
-}
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-.main-nav__wrapper{
-  background-color: $text-color;
+  @media (min-width: $desktop-width){
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
 }

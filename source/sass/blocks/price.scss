@@ -1,0 +1,98 @@
+.price{
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-style: normal;
+	padding-top: 145px;
+	padding-bottom: 45px;
+	background-color: $common-bg;
+	background-image: url(../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: $mobile-padding-left;
+	padding-right: $mobile-padding-right;
+
+	@media (min-width: $tablet-width){
+	    padding-left: $tablet-padding-left;
+		padding-right: $tablet-padding-right;
+  	}
+
+  	@media (min-width: $desktop-width){
+  		padding-left: $desktop-padding-left;
+		padding-right: $desktop-padding-right;
+  	}
+  	overflow: hidden;
+}
+
+.price__list{
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-bottom: 40px;
+	transform: translate(calc(-100vw + #{$mobile-padding-right} + #{$mobile-padding-left}));
+
+	@media (min-width: $tablet-width){
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		transform: translate(0px);
+  	}
+}
+
+.price__item{
+	border-left: 1px solid $common-bg;
+	border-right: 1px solid $common-bg;
+	box-sizing: border-box;
+
+	grid-template-rows: 1fr 1fr;
+	@media (max-width: $tablet-width){
+		width: calc(100vw - #{$mobile-padding-right} - #{$mobile-padding-left)});
+	}
+}
+
+.price__description{
+	background-color: $text-color;
+	text-align: center;
+	padding-top: 11px;
+	padding-bottom: 27px;
+}
+
+.price__header{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	color: $text-color-white;
+
+	@media (min-width: $desktop-width){
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+.price__cost{
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	color: $text-color-white;
+
+	@media (min-width: $desktop-width){
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+.price__legend{
+	display: none;
+	margin-top: auto;
+
+	@media (min-width: $tablet-width){
+		display: list-item;
+		grid-row: 2 / -1;
+	}
+}

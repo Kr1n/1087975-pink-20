@@ -1,3 +1,9 @@
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text{
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -5,13 +11,18 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link{
   position: relative;
+  margin-left: 15px;
 
   &::before{
-    background: url("../../img/logo-htmlacademy.svg") no-repeat;
+    background: url("../img/logo-htmlacademy.svg") no-repeat;
     content: "";
     width: 27px;
     height: 34px;
