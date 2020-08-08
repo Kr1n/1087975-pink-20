@@ -26,35 +26,35 @@
   }
 }
 
-.photos__item--wide{
-  grid-column: 1 / -1;
-
-  @media (min-width: $tablet-width){
-
-    & .photos__item-wrapper{
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-    }
-
-    & .photos__item-header{
-      order: -1;
-    }
-
-    & .photos__item-text{
-      grid-column: 1 / -1;
-    }
-
-    & .photos__item-likes{
-      order: -1;
-      margin: 0;
-      margin-left: auto;
-    }
-  }
-
-}
-
 .photos__item{
   background-color: $common-bg;
+
+
+  &--wide{
+    grid-column: 1 / -1;
+
+    @media (min-width: $tablet-width){
+
+      & .photos__item-wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      & .photos__item-header{
+        order: -1;
+      }
+
+      & .photos__item-text{
+        grid-column: 1 / -1;
+      }
+
+      & .photos__item-likes{
+        order: -1;
+        margin: 0;
+        margin-left: auto;
+      }
+    }
+  }
 }
 
 .photos__item-wrapper{

@@ -16,10 +16,10 @@
 	@media (min-width: $tablet-width){
 		width: 300px;
   	}
-}
-
-.form-button--desktop-wide{
-	@media (min-width: $desktop-width){
-		width: 500px;
-  	}
+	
+	&--desktop-wide{
+		@media (min-width: $desktop-width){
+			width: 500px;
+	  	}
+	}
 }

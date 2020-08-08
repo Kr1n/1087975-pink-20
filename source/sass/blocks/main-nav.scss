@@ -12,6 +12,20 @@
     min-height: $menu-height-desktop;
     margin-bottom: -$menu-height-desktop;
   }
+
+  &--opened{
+    @media (max-width: $desktop-width - 1px){
+      background-color: $text-color;
+      margin-bottom: 0;
+    }
+  }
+
+  &--opened .main-nav__list{
+    @media (max-width: $desktop-width - 1px){
+      display: block;
+      position: relative;
+    }
+  }
 }
 
 .main-nav__toggle{
@@ -54,20 +68,6 @@
     padding-right: 130px;
     margin: auto;
     box-sizing: border-box;
-  }
-}
-
-.main-nav--opened{
-  @media (max-width: $desktop-width - 1px){
-    background-color: $text-color;
-    margin-bottom: 0;
-  }
-}
-
-.main-nav--opened .main-nav__list{
-  @media (max-width: $desktop-width - 1px){
-    display: block;
-    position: relative;
   }
 }
 

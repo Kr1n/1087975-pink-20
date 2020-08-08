@@ -70,12 +70,12 @@
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
   }
-}
+  
+  &--mobile-hidden{
+    display: none;
 
-.page-main__text--mobile-hidden{
-  display: none;
-
-  @media (min-width: $tablet-width){
-    display: inline;
+    @media (min-width: $tablet-width){
+      display: inline;
+    }
   }
 }
