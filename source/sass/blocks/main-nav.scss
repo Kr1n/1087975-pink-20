@@ -19,9 +19,7 @@
   cursor: pointer;
   height: $menu-height-mobile;
   width: 90px;
-  background-color: red;
-  background: url("../img/svg/icon-menu-burger.svg") no-repeat center;
-  background-size: 50px 24px;
+  background-color: transparent;
   border: none;
   padding: 0;
   margin: 0;
@@ -56,6 +54,12 @@
 }
 
 .main-nav--opened{
+
+  & .main-nav__toogle-img{
+    width: 24px;
+    height: 24px;
+  }
+
   @media (max-width: $desktop-width - 1px){
     background-color: $text-color;
     margin-bottom: 0;
@@ -67,13 +71,35 @@
       position: relative;
     }
   }
+
+  & .main-nav__toggle-cross{
+    display: block;
+  }
+
+  & .main-nav__toggle-burger{
+    display: none;
+  }
 }
 
 .main-nav--closed{
+
+  & .main-nav__toogle-img{
+    width: 50px;
+    height: 24px;
+  }
+
   & .main-nav__list{
     @media (max-width: $desktop-width - 1px){
       display: none;
     }
+  }
+
+  & .main-nav__toggle-cross{
+    display: none;
+  }
+
+  & .main-nav__toggle-burger{
+    display: block;
   }
 }
 

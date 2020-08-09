@@ -11,53 +11,21 @@
 	border-top: 1px solid $common-bg;
 	border-bottom: 1px solid $common-bg;
 	box-sizing: border-box;
-	padding-top: 15px;
-	padding-bottom: 15px;
 	padding-left: 20px;
 	position: relative;
-	min-height: 45px;
-
-	&--included{
-		&::after{
-			content: "";
-			position: absolute;
-			width: 31px;
-			height: 21px;
-			right: 13px;
-			top: calc(50% - 10px);
-			background: url("../img/svg/icon-yes.svg") 0 0 no-repeat;
-			background-size: contain;
-		}
-	}
-
-	&--not-included{
-		&::after{
-			content: "";
-			position: absolute;
-			width: 27px;
-			height: 27px;
-			background: url("../img/svg/icon-no.svg") 0 0 no-repeat;
-			background-size: contain;
-			right: 18px;
-			top: calc(50% - 13px);
-		}
-	}
+	min-height: 59px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 18px;
 
 	@media (min-width: $tablet-width){
-		padding-top: 7px;
-		padding-bottom: 0;
+		min-height: 45px;
+		justify-content: center;
+	}
 
-		&--included{
-			&::after{
-				right: calc(50% - 15px);
-			}
-		}
-
-		&--not-included{
-			&::after{
-				right: calc(50% - 13px);
-			}
-		}
+	@media (min-width: $desktop-width){
+		min-height: 59px;
 	}
 }
 

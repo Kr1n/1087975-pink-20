@@ -155,29 +155,4 @@
 
 .intro__item-link{
   position: relative;
-
-  &::before{
-    content: "";
-    left: 0;
-    display: block;
-  }
-
-  &--apple::before{
-    background: url("../img/svg/logo-apple.svg") no-repeat;
-    width: 46px;
-    height: 57px;
-  }
-
-
-  &--android::before{
-    background: url("../img/svg/logo-android.svg") no-repeat;
-    width: 42px;
-    height: 47px;
-  }
-
-  &--windows::before{
-    background: url("../img/svg/logo-microsoft.svg") no-repeat;
-    width: 44px;
-    height: 42px;
-  }
 }

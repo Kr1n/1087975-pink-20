@@ -15,17 +15,7 @@
   border-radius: 50%;
   box-sizing: border-box;
   border: 3px solid rgba($text-color, 0.1);
-  display: block;
-
-  &--twitter{
-    background: url("../img/svg/icon-twitter.svg") no-repeat 50% 50%;
-  }
-
-  &--facebook{
-    background: url("../img/svg/icon-facebook.svg") no-repeat 50% 50%;
-  }
-
-  &--youtube{
-    background: url("../img/svg/icon-youtube.svg") no-repeat 50% 50%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
