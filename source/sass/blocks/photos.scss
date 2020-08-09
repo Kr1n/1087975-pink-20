@@ -78,16 +78,26 @@
 .photos__item-link{
   display: block;
   text-align: center;
+  min-height: 180px;
+  background-color: grey;
+
+  @media (min-width: $tablet-width){
+    min-height: 180px;
+  }
+
+  @media (min-width: $desktop-width){
+    min-height: 180px;
+  }
+
+  &--panorama{
+    min-height: 137px;
+  }
 }
 
 .photos__item-photo{
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.photos__item-photo img{
   width: 100%;
-
 }
 
 .photos__item-header{

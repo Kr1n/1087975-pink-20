@@ -11,7 +11,11 @@
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="74" height="23" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/svg/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/svg/logo-pink-white-tablet.svg">
+          <img class="page-header__logo-img" src="img/svg/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
+        </picture>
       </a>
     </div>
     <nav class="main-nav main-nav--closed">
@@ -159,7 +163,10 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/svg/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-img" src="img/svg/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

@@ -11,7 +11,11 @@
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="74" height="23" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/svg/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/svg/logo-pink-white-tablet.svg">
+          <img class="page-header__logo-img" src="img/svg/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
+        </picture>
       </a>
     </div>
 
@@ -45,11 +49,12 @@
       <div class="photos">
         <ul class="photos__list">
           <li class="photos__item photos__item--wide">
-            <a class="photos__item-link" href="#">
-              <figure class="photos__item-photo full-width">
-                <img src="img/panorama-mobile@1x.jpg" alt="Длинный узкий мост над рекой">
-                <figcaption class="visually-hidden">Длинный узкий мост над рекой</figcaption>
-              </figure>
+            <a class="photos__item-link photos__item-link--panorama full-width" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/panorama-desktop@1x.jpg, img/photo/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/panorama-tablet@1x.jpg, img/photo/panorama-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" srcset="img/photo/panorama-mobile@1x.jpg, img/photo/panorama-mobile@2x.jpg 2x" width="316" height="135" alt="Длинный узкий мост над рекой">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Анна
@@ -64,7 +69,11 @@
 
           <li class="photos__item">
             <a class="photos__item-link" href="#">
-              <img class="photos__item-photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина на фоне здания">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-car-desktop@1x.jpg, img/photo/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-car-tablet@1x.jpg, img/photo/photo-car-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" src="img/photo/photo-car-mobile@1x.jpg" srcset="img/photo/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Машина на фоне здания">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Левон
@@ -79,7 +88,11 @@
 
           <li class="photos__item">
             <a class="photos__item-link" href="#">
-              <img class="photos__item-photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Музыкальные ударная установка">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-drumset-desktop@1x.jpg, img/photo/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-drumset-tablet@1x.jpg, img/photo/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" src="img/photo/photo-drumset-mobile@1x.jpg" srcset="img/photo/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Музыкальные ударная установка">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Антон
@@ -94,7 +107,11 @@
 
           <li class="photos__item">
             <a class="photos__item-link" href="#">
-              <img class="photos__item-photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша с видом на голубое небо">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-window-desktop@1x.jpg, img/photo/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-window-tablet@1x.jpg, img/photo/photo-window-mobile-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" src="img/photo/photo-window-mobile@1x.jpg" srcset="img/photo/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Стеклянная крыша с видом на голубое небо">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Борис
@@ -109,7 +126,11 @@
 
           <li class="photos__item">
             <a class="photos__item-link" href="#">
-              <img class="photos__item-photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок - 'Кубанская бахча'">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-fair-desktop@1x.jpg, img/photo/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-fair-tablet@1x.jpg, img/photo/photo-fair-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" src="img/photo/photo-fair-mobile@1x.jpg" srcset="img/photo/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Рынок - 'Кубанская бахча'">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Сергей
@@ -124,7 +145,11 @@
 
           <li class="photos__item">
             <a class="photos__item-link" href="#">
-              <img class="photos__item-photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Гдето в горах">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-pov-desktop@1x.jpg, img/photo/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-pov-tablet@1x.jpg, img/photo/photo-pov-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" src="img/photo/photo-pov-mobile@1x.jpg" srcset="img/photo/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Гдето в горах">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Максим
@@ -139,7 +164,11 @@
 
           <li class="photos__item">
             <a class="photos__item-link" href="#">
-              <img class="photos__item-photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид на крыло самолета в небе из элюминатора">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-wing-desktop@1x.jpg, img/photo/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-wing-tablet@1x.jpg, img/photo/photo-wing-tablet@2x.jpg 2x">
+                <img class="photos__item-photo" src="img/photo/photo-wing-mobile@1x.jpg" srcset="img/photo/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Вид на крыло самолета в небе из элюминатора">
+              </picture>
             </a>
             <div class="photos__item-wrapper">
               <p class="photos__item-header">Надежда
@@ -158,7 +187,12 @@
 
       <section class="upload">
           <a class="upload__link">
-            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Загруженная картинка">
+
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/photo-road-desktop@1x.jpg, img/photo/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo/photo-road-tablet@1x.jpg, img/photo/photo-road-tablet@2x.jpg 2x">
+                <img class="upload__image" src="img/photo/photo-road-mobile@1x.jpg" srcset="img/photo/photo-road-mobile@2x.jpg 2x" alt="Загруженная картинка">
+              </picture>
           </a>
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="upload__input-wrapper">
@@ -208,7 +242,10 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/svg/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-img" src="img/svg/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
