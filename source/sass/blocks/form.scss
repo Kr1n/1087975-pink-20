@@ -126,6 +126,11 @@
 	padding-left: 31px;
 	padding-right: 31px;
 	padding-bottom: 42px;
+	color: $text-color-akcent;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
 
 	@media (min-width: $tablet-width){
 		margin-top: -53px;
@@ -259,8 +264,6 @@
 	    grid-column-gap: 50px;
 	}
 }
-
-
 
 .form__wrapper-contacts{
 	@media (min-width: $desktop-width){
