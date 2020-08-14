@@ -48,6 +48,7 @@
       order: -1;
       margin: 0;
       margin-left: auto;
+      gap: 18px;
     }
   }
 
@@ -137,4 +138,19 @@
   text-transform: uppercase;
   color: $text-color-akcent;
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 18px;
+
+  @media (min-width: $tablet-width){
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width){
+
+  }
 }
