@@ -158,33 +158,33 @@
 
           <div class="form__wrapper-achievement">
             <div class="form__group form__group--checkbox">
-              <label class="form__label" for="shark-selfie">Сделал селфи с акулой</label>
               <input class="form__input" type="checkbox" id="shark-selfie" name="shark-selfie" checked>
+              <label class="form__label" for="shark-selfie" tabindex="0">Сделал селфи с акулой</label>
             </div>
 
             <div class="form__group form__group--checkbox">
-              <label class="form__label" for="sunburned">Обгорел на пляже</label>
               <input class="form__input" type="checkbox" id="sunburned" name="sunburned" checked>
+              <label class="form__label" for="sunburned" tabindex="0">Обгорел на пляже</label>
             </div>
 
             <div class="form__group form__group--checkbox">
-              <label class="form__label" for="chuck_norris">Видел Чака Норриса</label>
               <input class="form__input" type="checkbox" id="chuck_norris" name="chuck_norris">
+              <label class="form__label" for="chuck_norris" tabindex="0">Видел Чака Норриса</label>
             </div>
 
             <div class="form__group form__group--checkbox">
-              <label class="form__label" for="shopping">Накупил сувениров</label>
               <input class="form__input" type="checkbox" id="shopping" name="shopping">
+              <label class="form__label" for="shopping" tabindex="0">Накупил сувениров</label>
             </div>
 
             <div class="form__group form__group--checkbox">
-              <label class="form__label" for="eiffel-tower">Удержал башню</label>
               <input class="form__input" type="checkbox" id="eiffel-tower" name="eiffel-tower" checked>
+              <label class="form__label" for="eiffel-tower" tabindex="0">Удержал башню</label>
             </div>
 
             <div class="form__group form__group--checkbox">
-              <label class="form__label" for="hotel-destroyer">Разгромил отель</label>
               <input class="form__input" type="checkbox" id="hotel-destroyer" name="hotel-destroyer">
+              <label class="form__label" for="hotel-destroyer" tabindex="0">Разгромил отель</label>
             </div>
           </div>
         </fieldset>
@@ -197,7 +197,7 @@
             <div class="form__group form__group--contacts">
               <label class="form__label form__label--akcent" for="phone">Номер телефона</label>
               <div class="form__input-wrapper">
-                <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                <input class="form__input form__input--with-icon" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
                 <div class="form__icon-wrapper">
                   <svg class="form__input-icon" width="20" height="19">
                     <use xlink:href="#icon-phone"></use>
@@ -209,7 +209,7 @@
             <div class="form__group form__group--contacts">
               <label class="form__label form__label--akcent" for="email">Адрес почты</label>
               <div class="form__input-wrapper">
-                <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту" required>
+                <input class="form__input form__input--with-icon" type="email" id="email" name="email" placeholder="Введите почту" required>
                 <div class="form__icon-wrapper">
                   <svg class="form__input-icon" width="18" height="13">
                     <use xlink:href="#icon-mail"></use>
@@ -225,26 +225,25 @@
           <label class="form__fieldset-header">С каким приложением путешествовали?</label>
 
           <div class="form__group form__group--radio">
-            <label class="form__label" for="app-ios">Pink для iOS</label>
             <input class="form__input" type="radio" id="app-ios" name="application" value="app-ios" checked>
+            <label class="form__label" for="app-ios" tabindex="0">Pink для iOS</label>
           </div>
 
           <div class="form__group form__group--radio">
-            <label class="form__label" for="app-android">Pink на Android</label>
             <input class="form__input" type="radio" id="app-android" name="application" value="app-android">
+            <label class="form__label" for="app-android" tabindex="0">Pink на Android</label>
           </div>
 
           <div class="form__group form__group--radio">
-            <label class="form__label" for="app-win">Windows Phone</label>
             <input class="form__input" type="radio" id="app-win" name="application" value="app-win">
+            <label class="form__label" for="app-win" tabindex="0">Windows Phone</label>
           </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--bordered form__fieldset--feedback">
           <div class="form__group form__group--textarea">
             <label class="form__fieldset-header" for="emotions">Опишите свои эмоции</label>
-            <textarea class="form__input" id="emotions" name="emotions" rows="5">Можно прям в красках, не стесняясь в выражениях
-            </textarea>
+            <textarea class="form__input" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </fieldset>
 
