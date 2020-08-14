@@ -46,6 +46,8 @@
   }
 
   @media (min-resolution: 2dppx){
+    background: url("../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
+    background-size: cover;
 
     @media (min-width: $tablet-width){
       background: url("../img/bg-back-tablet@2x.jpg") 0 0 no-repeat;
