@@ -158,4 +158,8 @@
     line-height: 18px;
     text-transform: none;
   }
+
+  &:focus{
+    outline: auto;
+  }
 }

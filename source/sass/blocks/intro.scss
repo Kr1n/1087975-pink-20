@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     height: 729px;
-    
+
 
       @media (min-resolution: 2dppx){
       background: url("../img/iphone-hand-tablet@2x.png") center bottom no-repeat,
@@ -114,6 +114,10 @@
   @media (min-width: $desktop-width){
     font-size: 21px;
     line-height: 18px;
+  }
+
+  &:focus{
+    outline: auto;
   }
 }
 
