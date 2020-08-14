@@ -173,6 +173,31 @@
   border: none;
   width: 75px;
   height: 75px;
+  min-height: 50px;
+  padding: 0;
+
+  &--contrast{
+    height: auto;
+    margin: auto;
+    width: 32px;
+  }
+
+  &--fill{
+    height: auto;
+    margin: auto;
+    width: 48px;
+  }
+
+  &--crop{
+
+    height: auto;
+    margin: auto;
+    width: 44px;
+  }
+
+  &--selected{
+    fill: $text-color-akcent;
+  }
 }
 
 .upload__button-list{
@@ -196,7 +221,7 @@
   }
 
   & .upload__button-icon{
-    fill: $text-color-akcent;;
+    fill: $text-color-akcent;
   }
 
   &--contrast{
@@ -249,6 +274,9 @@
 }
 
 .upload__button-icon{
-  width: 100%;
-  height: auto;
+
+  @media (min-width: $tablet-width){
+    width: 100%;
+    height: auto;
+  }
 }
