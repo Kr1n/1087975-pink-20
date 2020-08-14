@@ -95,11 +95,11 @@
   <header class="page-header">
     <div class="container">
       <a href="index.html" class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/svg/logo-pink-white-desktop.svg"/>
-          <source media="(min-width: 660px)" srcset="img/svg/logo-pink-white-tablet.svg"/>
-          <img class="page-header__logo-img" src="img/svg/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип">
-        </picture>
+        <svg class="page-header__logo-img" width="74" height="23" alt="Логотип">
+          <use class="icon-logo__mobile" xlink:href="img/svg/logo-header.svg#icon-logo__mobile"></use>
+          <use class="icon-logo__tablet" xlink:href="img/svg/logo-header.svg#icon-logo__tablet"></use>
+          <use class="icon-logo__desktop" xlink:href="img/svg/logo-header.svg#icon-logo__desktop"></use>
+        </svg>
       </a>
     </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -260,10 +260,10 @@
   <footer class="page-footer">
     <div class="container">
       <a href="index.html" class="page-footer__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/svg/logo-pink-blue-desktop.svg"/>
-          <img class="page-footer__logo-img" src="img/svg/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
-        </picture>
+        <svg class="page-footer__logo-img" width="74" height="23" alt="Логотип">
+          <use class="icon-logo__not-desktop" xlink:href="img/svg/logo-footer.svg#icon-logo__mobile"></use>
+          <use class="icon-logo__desktop" xlink:href="img/svg/logo-footer.svg#icon-logo__desktop"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

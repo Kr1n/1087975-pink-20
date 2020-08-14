@@ -59,3 +59,16 @@
     height: 40px;
   }
 }
+
+.page-footer__logo{
+  color: $text-color;
+
+  &[href]:hover{
+    color: $text-color-akcent;
+  }
+
+  &[href]:active{
+    color: $text-color;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,36 @@
+.icon-logo__mobile{
+  display: inline;
+
+  @media (min-width: $tablet-width){
+    display: none;
+  }
+}
+
+.icon-logo__tablet{
+  display: none;
+
+  @media (min-width: $tablet-width){
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+}
+
+.icon-logo__desktop{
+  display: none;
+
+  @media (min-width: $desktop-width){
+    display: inline;
+  }
+}
+
+.icon-logo__not-desktop{
+  display: inline;
+
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+}
+
