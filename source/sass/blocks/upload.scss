@@ -130,10 +130,6 @@
   }
 }
 
-.upload__input{
-  width: 100%;
-}
-
 .upload__submit,
 .upload__button{
   display: block;
@@ -194,23 +190,17 @@
   min-height: 50px;
   padding: 0;
   opacity: 0.3;
+  height: auto;
 
   &--contrast{
-    height: auto;
-    margin: auto;
     width: 32px;
   }
 
   &--fill{
-    height: auto;
-    margin: auto;
     width: 48px;
   }
 
   &--crop{
-
-    height: auto;
-    margin: auto;
     width: 44px;
   }
 
@@ -238,7 +228,7 @@
   }
 }
 
-.upload__input-button{
+.upload__input-icon{
   display: none;
 
   @media (min-width: $tablet-width){

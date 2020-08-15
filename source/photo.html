@@ -249,36 +249,52 @@
             </div>
 
             <div class="upload__input-group upload__input-group--selected">
-              <button class="upload__input-button upload__input-button--crop" type="button">
-                <span class="visually-hidden">Кроп</span>
+              <div class="upload__input-icon upload__input-icon--crop">
                 <svg class="upload__button-icon" width="44" height="44">
                   <use xlink:href="img/sprite.svg#icon-crop"></use>
                 </svg>
-              </button>
-              <input class="upload__input upload__input--crop" type="range" name="crop" id="crop">
-              <label class="visually-hidden" for="crop">Кроп</label>
+              </div>
+              <fieldset class="input-range">
+                <legend class="visually-hidden">Кроп</legend>
+                <div class="input-range__wrapper">
+                  <div class="input-range__bar"></div>
+                  <button class="input-range__toggle upload__input upload__input--crop" type="button" aria-label="Ползунок кропа"></button>
+                </div>
+              </fieldset>
             </div>
+
             <div class="upload__input-group">
-              <button class="upload__input-button upload__input-button--fill" type="button">
-                <span class="visually-hidden">Заливка</span>
+              <div class="upload__input-icon upload__input-icon--fill" type="button">
                 <svg class="upload__button-icon" width="48" height="43">
                   <use xlink:href="img/sprite.svg#icon-fill"></use>
                 </svg>
-              </button>
-              <input class="upload__input upload__input--fill" type="range" name="fill" id="fill">
-              <label class="visually-hidden" for="fill">Заливка</label>
+              </div>
+              <fieldset class="input-range">
+                <legend class="visually-hidden">Заливка</legend>
+                <div class="input-range__wrapper">
+                  <div class="input-range__bar"></div>
+                  <button class="input-range__toggle upload__input upload__input--fill" type="button" aria-label="Ползунок заливки"></button>
+                </div>
+              </fieldset>
             </div>
+
             <div class="upload__input-group">
-              <button class="upload__input-button upload__input-button--contrast" type="button">
-                <span class="visually-hidden">Контраст</span>
+              <div class="upload__input-icon upload__input-icon--contrast" type="button">
                 <svg class="upload__button-icon" width="32" height="32">
                   <use xlink:href="img/sprite.svg#icon-contrast"></use>
                 </svg>
-              </button>
-              <input class="upload__input upload__input--contrast" type="range" name="contrast" id="contrast">
-              <label class="visually-hidden" for="contrast">Контраст</label>
+              </div>
+              <fieldset class="input-range">
+                <legend class="visually-hidden">Контраст</legend>
+                <div class="input-range__wrapper">
+                  <div class="input-range__bar"></div>
+                  <button class="input-range__toggle upload__input upload__input--contrast" type="button" aria-label="Ползунок контраста"></button>
+                </div>
+              </fieldset>
             </div>
+
           </div>
+
           <div class="upload__button-wrapper">
             <button class="upload__submit" type="submit">Запостить</button>
             <button class="upload__button" type="reset">Отмена</button>
