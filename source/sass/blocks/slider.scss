@@ -1,28 +1,28 @@
 .slider{
-	position: relative;
+  position: relative;
 }
 
 .slider__toggles{
-	margin: 0;
-	padding: 0;
-	line-height: 0px;
-	text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  text-align: center;
 
-	@media (min-width: $desktop-width){
-		display: none;
-	}
+  @media(min-width: $desktop-width){
+    display: none;
+  }
 }
 
 .slider__toggle{
-	background-color: rgba($text-color, 0.3);
-	border: 3px solid transparent;
-	border-radius: 50%;
-	width: 6px;
-	height: 6px;
-	margin-right: 13px;
-	padding: 0;
-	vertical-align: middle;
-	cursor: pointer;
+  background-color: rgba($text-color, 0.3);
+  border: 3px solid transparent;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-right: 13px;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
 
   &:hover{
     background-color: rgba($text-color, 0.6);
@@ -34,38 +34,38 @@
 }
 
 .slider__toggle:nth-last-of-type(1){
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .slider__toggle--active{
-	background-color: $white-bg;
-	border: 3px solid $text-color;
-	box-sizing: content-box;
+  background-color: $white-bg;
+  border: 3px solid $text-color;
+  box-sizing: content-box;
 }
 
 .slider__arrows{
-	margin: 0;
-	padding: 0;
-	line-height: 0px;
-	display: none;
-	background-color: transparent;
-	border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  display: none;
+  background-color: transparent;
+  border: none;
 
-	@media (min-width: $desktop-width){
-		display: block;
-	}
+  @media(min-width: $desktop-width){
+    display: block;
+  }
 }
 
 .slider__arrow{
-	position: absolute;
-	background-color: transparent;
-	border: none;
-	width: 25px;
-	height: 25px;
-	border-right: 2px solid $text-color;
-	border-top: 2px solid $text-color;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-right: 2px solid $text-color;
+  border-top: 2px solid $text-color;
   opacity: 0.3;
-	top: 25px;
+  top: 25px;
 
   &:hover{
     opacity: 0.6;
@@ -77,11 +77,11 @@
 }
 
 .slider__arrow--prev{
-	transform: rotate(-135deg);
-	left: 0;
+  transform: rotate(-135deg);
+  left: 0;
 }
 
 .slider__arrow--next{
-	transform: rotate(45deg);
-	right: 0;
+  transform: rotate(45deg);
+  right: 0;
 }

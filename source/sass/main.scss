@@ -9,9 +9,6 @@
   overflow: hidden;
 }
 
-body{
-}
-
 img{
   max-width: 100%;
   height: auto;
@@ -21,7 +18,7 @@ a{
   text-decoration: none;
 }
 
-.container{  
+.container{
   position: relative;
   box-sizing: border-box;
   max-width: $max-width;
@@ -41,13 +38,13 @@ a{
 }
 
 .mobile-only{
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     display: none;
   }
 }
 
 .mobile-hidden{
-  @media (max-width: $tablet-width - 1px){
+  @media(max-width: $tablet-width - 1px){
     display: none;
   }
 }

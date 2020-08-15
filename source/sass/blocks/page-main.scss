@@ -10,7 +10,6 @@
   line-height: 33px;
   color: $text-color-white;
   margin: 0;
-  padding-top: 102px;
   box-sizing: border-box;
   text-align: center;
   z-index: -1;
@@ -25,15 +24,14 @@
   @media (min-width: $tablet-width){
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-size: cover;
-    font-size: 50px;
     line-height: 68px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
     padding-top: $menu-height-tablet + 102px;
     padding-bottom: 104px;
-    font-size: 40px;
   }
 
   @media (min-width: $desktop-width){

@@ -22,13 +22,11 @@
   &::after{
     content: "24";
     position: absolute;
-    font-family: Open Sans;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
-
     color: $text-color-akcent;
     border-radius: 50%;
-
     box-sizing: border-box;
     text-align: center;
 

@@ -70,7 +70,7 @@
     width: 39px;
     height: 39px;
     background-color: $white-bg;
-    border: 2px solid #E5E5E5;
+    border: 2px solid $input-border-color;
     border-radius: 1px;
     margin-right: 20px;
     left: 0;
@@ -95,8 +95,6 @@
     transform: rotate(-45deg);
     left: 10px;
     top: 12px;
-
-
   }
 
   .form__group--radio &{
@@ -113,7 +111,7 @@
     height: 41px;
     border-radius: 50%;
     background-color: $white-bg;
-    border: 2px solid #E5E5E5;
+    border: 2px solid $input-border-color;
     margin-right: 20px;
     left: 0;
   }
@@ -317,7 +315,7 @@
 
 .form__fieldset--bordered{
   @media (min-width: $tablet-width){
-    border: 2px solid #E5E5E5;
+    border: 2px solid $input-border-color;
     border-radius: 1px;
     padding-left: 58px;
     padding-right: 58px;
@@ -385,7 +383,6 @@
   display: none;
 
   @media (min-width: $tablet-width){
-    display: block;
     background-color: $input-border-color;
     position: absolute;
     width: 59px;

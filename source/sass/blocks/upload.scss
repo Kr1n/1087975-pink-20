@@ -35,10 +35,6 @@
     display: grid;
     align-content: space-between;
   }
-
-  @media (min-width: $desktop-width){
-
-  }
 }
 
 .upload__link{
@@ -73,10 +69,6 @@
       background-color: $text-color;
       opacity: 0.1;
     }
-  }
-
-  @media (min-width: $desktop-width){
-
   }
 }
 
@@ -186,7 +178,6 @@
 .upload__button-item{
   border: none;
   width: 75px;
-  height: 75px;
   min-height: 50px;
   padding: 0;
   opacity: 0.3;
@@ -205,8 +196,13 @@
   }
 
   &--selected{
+
     color: $text-color-akcent;
     opacity: 1;
+
+    .form__input-icon{
+      fill: $text-color-akcent;
+    }
   }
 
   &:hover{
@@ -286,15 +282,23 @@
   }
 }
 
-.upload__button-item--selected{
-  & .form__input-icon{
-    fill: $text-color-akcent;
-  }
-}
-
 .upload__button-icon{
   @media (min-width: $tablet-width){
     width: 100%;
     height: auto;
+  }
+}
+
+.upload__input{
+  &--crop{
+    left: 80%;
+  }
+
+  &--fill{
+    left: 15%;
+  }
+
+  &--contrast{
+    left: 50%;
   }
 }
