@@ -7,7 +7,7 @@
 	padding: 0;
 	line-height: 0px;
 	text-align: center;
-	
+
 	@media (min-width: $desktop-width){
 		display: none;
 	}
@@ -22,7 +22,15 @@
 	margin-right: 13px;
 	padding: 0;
 	vertical-align: middle;
-	cursor: pointer; 
+	cursor: pointer;
+
+  &:hover{
+    background-color: rgba($text-color, 0.6);
+  }
+
+  &:active{
+    background-color: rgba($text-color, 0.1);
+  }
 }
 
 .slider__toggle:nth-last-of-type(1){
@@ -54,9 +62,18 @@
 	border: none;
 	width: 25px;
 	height: 25px;
-	border-right: 2px solid rgba($text-color, 0.3);
-	border-top: 2px solid rgba($text-color, 0.3);
+	border-right: 2px solid $text-color;
+	border-top: 2px solid $text-color;
+  opacity: 0.3;
 	top: 25px;
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active{
+    opacity: 0.1;
+  }
 }
 
 .slider__arrow--prev{

@@ -22,4 +22,12 @@
   &:focus{
     outline: auto;
   }
+
+  &:hover{
+    border: 3px solid $text-color;
+  }
+
+  &:active{
+    opacity: 0.1;
+  }
 }

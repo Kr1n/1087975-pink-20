@@ -76,6 +76,14 @@
     left: 0;
   }
 
+  .form__group--checkbox &:hover::before{
+    border: 2px solid $text-color;
+  }
+
+  .form__group--checkbox &:active::before{
+    border: 2px solid $text-color-akcent;
+  }
+
   .form__group--checkbox .form__input:checked ~ &::after{
     position: absolute;
     content: "";
@@ -87,6 +95,8 @@
     transform: rotate(-45deg);
     left: 10px;
     top: 12px;
+
+
   }
 
   .form__group--radio &{
@@ -106,6 +116,14 @@
     border: 2px solid #E5E5E5;
     margin-right: 20px;
     left: 0;
+  }
+
+  .form__group--radio &:hover::before{
+    border: 2px solid $text-color;
+  }
+
+  .form__group--radio &:active::before{
+    border: 2px solid $text-color-akcent;
   }
 
   .form__group--radio .form__input:checked ~ &::after{
@@ -172,6 +190,14 @@
   .form__group--textarea &{
     resize: none;
   }
+
+  &:hover{
+    border: 2px solid $text-color;
+  }
+
+  &:active{
+    border: 2px solid $text-color-akcent;
+  }
 }
 
 .form__group--textarea{
@@ -216,6 +242,19 @@
   @media (min-width: $tablet-width){
     width: 300px;
   }
+
+  &:hover{
+    background-color: $form-button-hover-bg;
+  }
+
+  &:active{
+    color: rgba($text-color-white, 0.3);
+  }
+
+  &:disabled{
+    background-color: $input-border-color;
+    color: $text-color-white;
+  }
 }
 
 .form__legent{
@@ -229,12 +268,12 @@
   padding-top: 44px;
 
   @media (min-width: $tablet-width){
-   width: max-content;
-   margin-left: auto;
-   margin-right: 20px;
-   padding-top: 0;
-   align-self: center;
- }
+    width: max-content;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-top: 0;
+    align-self: center;
+  }
 }
 
 .form__legent-akcent{
@@ -333,9 +372,9 @@
 
 .form__group--contacts{
   @media (min-width: $tablet-width){
-   display: flex;
-   flex-direction: column-reverse;
- }
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .form__input-wrapper{

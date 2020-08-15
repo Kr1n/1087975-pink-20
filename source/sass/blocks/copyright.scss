@@ -20,4 +20,13 @@
 .copyright__link{
   position: relative;
   margin-left: 15px;
+  color: $text-color-akcent;
+
+  &:hover{
+    color: $text-color;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }

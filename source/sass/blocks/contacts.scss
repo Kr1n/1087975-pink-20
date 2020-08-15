@@ -78,6 +78,16 @@
 	font-size: 24px;
 	line-height: 33px;
 	color: $text-color-akcent;
+
+  &:hover{
+    color: $text-color;
+    text-decoration-line: underline;
+  }
+
+  &:active{
+    color: rgba($text-color, 0.3);
+    text-decoration-line: none;
+  }
 }
 
 .contacts__map{
@@ -116,7 +126,7 @@
 	border: 0;
 	width: 100%;
 	height: 200px;
-	
+
 
 	@media (min-width: $tablet-width){
 		height: 374px;

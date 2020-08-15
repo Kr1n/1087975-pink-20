@@ -8,26 +8,26 @@
   padding-right: $mobile-padding-right;
 
   @media (min-width: $tablet-width){
-   padding-left: $tablet-padding-left;
-   padding-right: $tablet-padding-right;
-   padding-bottom: 54px;
-   padding-top: 57px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 50px;
- }
+    padding-left: $tablet-padding-left;
+    padding-right: $tablet-padding-right;
+    padding-bottom: 54px;
+    padding-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
 
- @media (min-width: $desktop-width){
-  margin-left: $desktop-padding-left;
-  margin-right: $desktop-padding-right;
+  @media (min-width: $desktop-width){
+    margin-left: $desktop-padding-left;
+    margin-right: $desktop-padding-right;
 
-  padding-left: 80px;
-  padding-right: 60px;
-  padding-bottom: 61px;
-  padding-top: 53px;
-  grid-template-columns: 300px 1fr;
-  grid-gap: 90px;
-}
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 61px;
+    padding-top: 53px;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 90px;
+  }
 }
 
 .upload__form{
@@ -157,6 +157,15 @@
   @media (min-width: $desktop-width){
     margin-bottom: 0px;
   }
+
+  &:hover{
+    background-color: $text-color-akcent;
+    color: $text-color-white;
+  }
+
+  &:active{
+    color: rgba($text-color-white, 0.3);
+  }
 }
 
 .upload__button{
@@ -165,8 +174,17 @@
   opacity: 0.1;
 
   @media (min-width: $desktop-width){
-   margin-left: 44px;
- }
+    margin-left: 44px;
+  }
+
+  &:hover{
+    opacity: 0.3;
+  }
+
+  &:active{
+    background-color: $text-color;
+    color: rgba($text-color-white, 0.3);
+  }
 }
 
 .upload__button-item{
@@ -175,6 +193,7 @@
   height: 75px;
   min-height: 50px;
   padding: 0;
+  opacity: 0.3;
 
   &--contrast{
     height: auto;
@@ -196,7 +215,17 @@
   }
 
   &--selected{
-    fill: $text-color-akcent;
+    color: $text-color-akcent;
+    opacity: 1;
+  }
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  &:active{
+    color: $text-color-akcent;
+    opacity: 1;
   }
 }
 
@@ -221,7 +250,7 @@
   }
 
   & .upload__button-icon{
-    fill: $text-color-akcent;
+    color: $text-color-akcent;
   }
 
   &--contrast{
@@ -274,7 +303,6 @@
 }
 
 .upload__button-icon{
-
   @media (min-width: $tablet-width){
     width: 100%;
     height: auto;
