@@ -47,7 +47,7 @@
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
 
-  @media (max-width: $tablet-width){
+  @media (max-width: $tablet-width - 1px){
     width: calc(100vw - #{$mobile-padding-right} - #{$mobile-padding-left)});
   }
 
