@@ -1,10 +1,10 @@
 .contacts{
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   text-align: center;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
-  padding-top: 47px;
+  padding-top: 44px;
 
   @media(min-width: $tablet-width){
     padding-left: $tablet-padding-left;
@@ -14,6 +14,7 @@
   @media(min-width: $desktop-width){
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
+    padding-top: 60px;
   }
 }
 
@@ -24,7 +25,21 @@
   font-size: 24px;
   line-height: 120%;
   color: $text-color;
-  padding-bottom: 45px;
+  padding-bottom: 34px;
+
+  @media(min-width: $tablet-width){
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+    padding-bottom: 32px;
+  }
+
+  @media(min-width: $desktop-width){
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    padding-bottom: 38px;
+  }
 }
 
 .contacts__list{
@@ -35,6 +50,7 @@
   @media(min-width: $tablet-width){
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
   }
 
   @media(min-width: $desktop-width){
@@ -43,7 +59,7 @@
 }
 
 .contacts__item{
-  padding-bottom: 31px;
+  padding-bottom: 18px;
 
   &:nth-last-of-type(1){
     padding-bottom: 0;
@@ -62,6 +78,10 @@
       order: 1;
     }
   }
+
+  @media(min-width: $tablet-width){
+    padding-bottom: 42px;
+  }
 }
 
 .contacts__item-text{
@@ -71,6 +91,14 @@
   font-size: 18px;
   line-height: 25px;
   color: $text-color;
+
+  @media(min-width: $tablet-width){
+    line-height: 28px;
+  }
+
+  @media(min-width: $desktop-width){
+    padding-bottom: 19px;
+  }
 }
 
 .contacts__item-link{
@@ -91,7 +119,7 @@
 }
 
 .contacts__map{
-  margin-top: 41px;
+  margin-top: 36px;
   position: relative;
 
   &::before{
@@ -105,7 +133,7 @@
   }
 
   @media(min-width: $tablet-width){
-    margin-top: 30px;
+    margin-top: 23px;
 
     &::before{
       border-width: 68px 50vw 50vw;
@@ -113,7 +141,7 @@
   }
 
   @media(min-width: $desktop-width){
-    margin-top: 26px;
+    margin-top: 10px;
 
     &::before{
       border-width: 103px 50vw 50vw;

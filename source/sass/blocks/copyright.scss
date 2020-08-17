@@ -21,6 +21,7 @@
   position: relative;
   margin-left: 15px;
   color: $text-color-akcent;
+  padding-top: 5px;
 
   &:hover{
     color: $text-color;
@@ -28,5 +29,9 @@
 
   &:active{
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
   }
 }

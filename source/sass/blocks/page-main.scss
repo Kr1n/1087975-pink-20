@@ -12,10 +12,10 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: $menu-height-mobile + 29px;
+  padding-top: 29px;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
-  padding-bottom: 84px;
+  padding-bottom: 77px;
 
   @media (min-width: $tablet-width){
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
@@ -64,8 +64,7 @@
   color: $text-color;
   margin: 0;
   background-color: $white-bg;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 44px;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
   text-align: center;

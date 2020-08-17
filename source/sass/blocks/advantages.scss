@@ -1,5 +1,5 @@
 .advantages{
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -11,23 +11,39 @@
   border-top:  1px solid $common-bg;
   border-bottom:  1px solid $common-bg;
   box-sizing: border-box;
-  padding-left: 20px;
   position: relative;
-  min-height: 59px;
+  min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
   padding-right: 18px;
 
   @media(min-width: $tablet-width){
-    min-height: 45px;
-    justify-content: center;
+    min-height: 47px;
+    justify-content: flex-start;
+    padding-left: 16px;
   }
 
   @media(min-width: $desktop-width){
-    min-height: 59px;
+    min-height: 61px;
+    padding-left: 20px;
+  }
+
+  &--included{
+    @media(min-width: $tablet-width){
+      justify-content: center;
+    }
+  }
+
+  &--not-included{
+    @media(min-width: $tablet-width){
+      justify-content: center;
+    }
   }
 }
+
+
 
 .advantages__item-text{
   color: $text-color;

@@ -1,7 +1,7 @@
 .price{
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
-  padding-top: 145px;
+  padding-top: 100px;
   padding-bottom: 45px;
   background-color: $common-bg;
   background-image: url("../img/svg/bg-triangle-white.svg");
@@ -13,11 +13,18 @@
   @media (min-width: $tablet-width){
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
+    background-position: 0px -35px;
+    background-size: auto;
+    padding-top: 112px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $desktop-width){
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
+    padding-top: 156px;
+    padding-bottom: 53px;
+    background-position: 0px 0px;
   }
   overflow: hidden;
 }
@@ -29,7 +36,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
   transform: translate(calc(-100vw + #{$mobile-padding-right} + #{$mobile-padding-left}));
 
   @media (min-width: $tablet-width){
@@ -59,13 +66,25 @@
     font-weight: normal;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 24px;
     color: $text-color-white;
     background-color: $text-color-akcent;
     padding: 0 50px;
-    left: -30px;
-    top: 20px;
+    left: -36px;
+    top: 18px;
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width){
+      left: -43px;
+      top: 15px;
+      line-height: 18px;
+    }
+
+    @media (min-width: $desktop-width){
+      left: -36px;
+      top: 18px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -74,6 +93,15 @@
   text-align: center;
   padding-top: 11px;
   padding-bottom: 27px;
+
+  @media (min-width: $tablet-width){
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
 }
 
 .price__header{
@@ -82,6 +110,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  text-transform: uppercase;
   color: $text-color-white;
 
   @media (min-width: $desktop-width){

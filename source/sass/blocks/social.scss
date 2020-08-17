@@ -6,6 +6,15 @@
   display: flex;
   justify-content: center;
   grid-column-gap: 8px;
+
+  @media (min-width: $tablet-width){
+    margin-left: -14px;
+  }
+
+  @media(min-width: $desktop-width){
+    margin-left: 11px;
+    grid-column-gap: 5px;
+  }
 }
 
 .social__link{

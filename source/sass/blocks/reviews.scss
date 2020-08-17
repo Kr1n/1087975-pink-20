@@ -5,21 +5,21 @@
   text-align: center;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
-  padding-top: 50px;
-  padding-bottom: 37px;
+  padding-top: 41px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width){
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
-    padding-top: 100px;
-    padding-bottom: 14px;
+    padding-top: 93px;
+    padding-bottom: 0px;
   }
 
   @media (min-width: $desktop-width){
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
-    padding-top: 193px;
-    padding-bottom: 41px;
+    padding-top: 185px;
+    padding-bottom: 0px;
   }
 }
 
@@ -27,7 +27,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 41px;
+  padding-bottom: 35px;
 }
 
 .reviews__item{
@@ -43,13 +43,13 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-color-black;
-  padding-bottom: 31px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width){
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 17px;
+    padding-bottom: 0px;
   }
 
   @media (min-width: $desktop-width){
@@ -71,7 +71,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 36px;
     order: -1;
   }
 
@@ -107,6 +107,7 @@
   @media (min-width: $desktop-width){
     position: absolute;
     top: 72px;
+    left: 46.7%;
     display: inline;
   }
 }

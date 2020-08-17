@@ -19,7 +19,7 @@
   border-radius: 50%;
   width: 6px;
   height: 6px;
-  margin-right: 13px;
+  margin-right: 14px;
   padding: 0;
   vertical-align: middle;
   cursor: pointer;
@@ -60,12 +60,12 @@
   position: absolute;
   background-color: transparent;
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-right: 2px solid $text-color;
   border-top: 2px solid $text-color;
   opacity: 0.3;
-  top: 25px;
+  top: 33px;
 
   &:hover{
     opacity: 0.6;
@@ -78,10 +78,10 @@
 
 .slider__arrow--prev{
   transform: rotate(-135deg);
-  left: 0;
+  left: 6px;
 }
 
 .slider__arrow--next{
   transform: rotate(45deg);
-  right: 0;
+  right: 6px;
 }

@@ -2,10 +2,11 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   background-color: $common-bg;
-  padding-bottom: 41px;
+  padding-bottom: 44px;
   padding-top: 20px;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
+  margin-top: 41px;
 
   @media (min-width: $tablet-width){
     padding-left: $tablet-padding-left;
@@ -39,7 +40,7 @@
 
 .upload__link{
   display: block;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width){
     margin-bottom: 0;
@@ -75,8 +76,8 @@
 .upload__input-group{
   display: none;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 27px;
+  padding-top: 21px;
+  padding-bottom: 23px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -87,7 +88,7 @@
     position: absolute;
     width: 100vw;
     height: 1px;
-    left: 0;
+    left: -$mobile-padding-left;
     bottom: 0;
     background-color: $text-color;
     opacity: 0.1;
@@ -124,6 +125,7 @@
 
 .upload__submit,
 .upload__button{
+  font-family: "Open Sans", "Arial", sans-serif;
   display: block;
   font-weight: bold;
   font-size: 18px;
@@ -177,26 +179,13 @@
 
 .upload__button-item{
   border: none;
-  width: 75px;
   min-height: 50px;
+  min-width: 50px;
   padding: 0;
   opacity: 0.3;
   height: auto;
 
-  &--contrast{
-    width: 32px;
-  }
-
-  &--fill{
-    width: 48px;
-  }
-
-  &--crop{
-    width: 44px;
-  }
-
   &--selected{
-
     color: $text-color-akcent;
     opacity: 1;
 
@@ -213,11 +202,16 @@
     color: $text-color-akcent;
     opacity: 1;
   }
+
+  & use{
+    width: 100%;
+  }
 }
 
 .upload__button-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 28px;
 
   @media (min-width: $tablet-width){
     display: none;
@@ -283,6 +277,7 @@
 }
 
 .upload__button-icon{
+  width: 100%;
   @media (min-width: $tablet-width){
     width: 100%;
     height: auto;
