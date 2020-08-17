@@ -68,3 +68,15 @@ a{
 .nowrap{
   white-space: nowrap;
 }
+
+.for-mobile{
+  @media(max-width: $mobile-width - 1px){
+    display: inherit;
+  }
+}
+
+.for-desktop{
+  @media(min-width: $desktop-width){
+    display: inherit;
+  }
+}

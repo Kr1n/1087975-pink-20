@@ -128,7 +128,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 33px 50vw 50vw;
+    border-width: 33px 50vw 0vw;
     border-color: $white-bg transparent transparent transparent;
   }
 
@@ -136,7 +136,7 @@
     margin-top: 23px;
 
     &::before{
-      border-width: 68px 50vw 50vw;
+      border-width: 68px 50vw 0vw;
     }
   }
 
@@ -144,7 +144,7 @@
     margin-top: 10px;
 
     &::before{
-      border-width: 103px 50vw 50vw;
+      border-width: 103px 50vw 0vw;
     }
   }
 }

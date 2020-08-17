@@ -22,12 +22,16 @@
     background-size: cover;
     line-height: 68px;
     font-size: 40px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
     display: flex;
     flex-direction: column;
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
-    padding-top: $menu-height-tablet + 102px;
-    padding-bottom: 104px;
+    padding-top: 0px;
+    padding-bottom: 127px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width){
@@ -35,8 +39,9 @@
     background-size: cover;
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
-    padding-top: $menu-height-desktop + 114px;
-    padding-bottom: 104px;
+    padding-top: $menu-height-desktop + 59px;
+    padding-bottom: 89px;
+
   }
 
   @media (min-resolution: 2dppx){
@@ -72,8 +77,9 @@
   @media (min-width: $tablet-width){
     font-size: 18px;
     line-height: 30px;
-    padding-left: $tablet-padding-left;
-    padding-right: $tablet-padding-right;
+    padding-top: 25px;
+    padding-left: $tablet-padding-left + 30px;
+    padding-right: $tablet-padding-right + 30px;
   }
 
   @media (min-width: $desktop-width){

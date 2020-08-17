@@ -11,21 +11,22 @@
   @media (min-width: $tablet-width){
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
-    padding-bottom: 54px;
+    padding-bottom: 49px;
     padding-top: 57px;
+    margin-top: 70px;
+    margin-bottom: 31px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-template-columns: 48.5% 1fr;
+    grid-gap: 46px;
   }
 
   @media (min-width: $desktop-width){
     margin-left: $desktop-padding-left;
     margin-right: $desktop-padding-right;
-
     padding-left: 80px;
     padding-right: 60px;
-    padding-bottom: 61px;
-    padding-top: 53px;
+    padding-bottom: 53px;
+    padding-top: 50px;
     grid-template-columns: 300px 1fr;
     grid-gap: 90px;
   }
@@ -44,6 +45,10 @@
 
   @media (min-width: $tablet-width){
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: 3px;
   }
 }
 
@@ -100,8 +105,9 @@
     align-items: center;
     padding: 0;
     padding-right: 20px;
-    min-height: 72px;
     grid-gap: 29px;
+    margin-top: 6px;
+    margin-bottom: 45px;
 
     &::after{
       width: 100%;
@@ -112,6 +118,9 @@
     padding: 0;
     padding-right: 30px;
     grid-template-columns: 50px 1fr;
+    grid-gap: 42px;
+    margin-top: 0px;
+    margin-bottom: 22px;
   }
 }
 
@@ -143,6 +152,10 @@
   color: $text-color-akcent;
   border: 3px solid $text-color-akcent;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width){
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $desktop-width){
     margin-bottom: 0px;
@@ -249,17 +262,17 @@
     margin: auto;
 
     @media (min-width: $desktop-width){
-      width: 48px;
+      width: 54px;
     }
   }
 
   &--crop{
-    width: 22px;
+    width: 24px;
     height: auto;
     margin: auto;
 
     @media (min-width: $desktop-width){
-      width: 44px;
+      width: 48px;
     }
   }
 }
@@ -269,10 +282,14 @@
 
   @media (min-width: $tablet-width){
     margin-top: 0;
+    margin-right: 13px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width){
     display: flex;
+    margin-right: 0px;
+    margin-bottom: 5px;
   }
 }
 
