@@ -14,7 +14,7 @@
     padding-bottom: 49px;
     padding-top: 57px;
     margin-top: 70px;
-    margin-bottom: 31px;
+    margin-bottom: 0px;
     display: grid;
     grid-template-columns: 48.5% 1fr;
     grid-gap: 46px;
@@ -23,6 +23,8 @@
   @media (min-width: $desktop-width){
     margin-left: $desktop-padding-left;
     margin-right: $desktop-padding-right;
+    margin-top: 67px;
+    margin-bottom: 30px;
     padding-left: 80px;
     padding-right: 60px;
     padding-bottom: 53px;
@@ -48,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width){
-    margin-top: 3px;
+    margin-top: 7px;
   }
 }
 
@@ -81,8 +83,8 @@
 .upload__input-group{
   display: none;
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 23px;
+  padding-top: 26px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -107,10 +109,12 @@
     padding-right: 20px;
     grid-gap: 29px;
     margin-top: 6px;
-    margin-bottom: 45px;
+    margin-bottom: 24px;
+    padding-bottom: 21px;
 
     &::after{
       width: 100%;
+      left: 0;
     }
   }
 
@@ -121,6 +125,10 @@
     grid-gap: 42px;
     margin-top: 0px;
     margin-bottom: 22px;
+
+    &:nth-last-of-type(1)::after{
+      display: none;
+    }
   }
 }
 

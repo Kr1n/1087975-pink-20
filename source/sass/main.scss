@@ -49,6 +49,12 @@ a{
   }
 }
 
+.tablet-hidden{
+  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1px){
+    display: none;
+  }
+}
+
 .desktop-only{
   @media(max-width: $desktop-width - 1px){
     display: none;
