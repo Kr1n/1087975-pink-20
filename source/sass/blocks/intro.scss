@@ -7,19 +7,19 @@
   margin-left: auto;
   box-sizing: border-box;
   background-color: $intro-bg;
-  background: url("../img/iphone-hand-mobile@1x.png") left 111px no-repeat,
-  url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background: url("../img/iphone-hand-mobile@1x.png") left 179px no-repeat,
+  url("../img/bg-back-mobile@1x.jpg") center center no-repeat;
   background-size: 258px auto, cover;
 
   @media (min-resolution: 2dppx){
-    background: url("../img/iphone-hand-mobile@2x.png") left 111px no-repeat,
-    url("../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
+    background: url("../img/iphone-hand-mobile@2x.png") left 179px no-repeat,
+    url("../img/bg-back-mobile@2x.jpg") center center no-repeat;
     background-size: 258px auto, cover;
   }
 
   @media (min-width: $tablet-width){
     background: url("../img/iphone-hand-tablet@1x.png") center bottom no-repeat,
-    url("../img/bg-back-tablet@1x.jpg") 0 0 no-repeat;
+    url("../img/bg-back-tablet@1x.jpg") center center no-repeat;
     background-size: 700px auto, cover;
     display: flex;
     flex-direction: column;
@@ -27,20 +27,20 @@
 
     @media (min-resolution: 2dppx){
       background: url("../img/iphone-hand-tablet@2x.png") center bottom no-repeat,
-      url("../img/bg-back-tablet@2x.jpg") 0 0 no-repeat;
+      url("../img/bg-back-tablet@2x.jpg") center no-repeat;
       background-size: 700px auto, cover;
     }
   }
 
   @media (min-width: $desktop-width){
     background: url("../img/iphone-hand-desktop@1x.png") right bottom no-repeat,
-    url("../img/bg-back-desktop@1x.jpg") 0 0 no-repeat;
+    url("../img/bg-back-desktop@1x.jpg") center center no-repeat;
     background-size: 1054px auto, cover;
     height: 853px;
 
     @media (min-resolution: 2dppx){
       background: url("../img/iphone-hand-desktop@2x.png") right bottom no-repeat,
-      url("../img/bg-back-desktop@2x.jpg") 0 0 no-repeat;
+      url("../img/bg-back-desktop@2x.jpg") center center no-repeat;
       background-size: 1054px auto, cover;
     }
   }
@@ -61,16 +61,15 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  padding-top: 25px;
+  padding-top: 93px;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
-  height: 396px;
+  height: 465px;
 
   @media (min-width: $tablet-width){
-    padding-top: $menu-height-tablet + 102px;
     font-size: 40px;
     width: 300px;
-    padding-top: 93px;
+    padding-top: 203px;
     padding-left: 71px;
     padding-right: 33px;
     height: auto;
@@ -142,7 +141,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 31px;
+  margin-top: 34px;
   gap: 36px;
 
   @media (min-width: $tablet-width){
@@ -159,7 +158,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width){
     margin-top: 28px;
