@@ -167,6 +167,8 @@
     line-height: 18px;
     text-transform: none;
     font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     .main-nav__item--active &{
       border-bottom: 2px solid $text-color-white;
