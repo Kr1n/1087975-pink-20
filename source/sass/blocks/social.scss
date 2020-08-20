@@ -7,6 +7,14 @@
   justify-content: center;
   grid-column-gap: 8px;
 
+  @media (min-width: $tablet-width){
+    margin-left: -14px;
+  }
+
+  @media(min-width: $desktop-width){
+    margin-left: 11px;
+    grid-column-gap: 5px;
+  }
 }
 
 .social__link{
@@ -15,17 +23,19 @@
   border-radius: 50%;
   box-sizing: border-box;
   border: 3px solid rgba($text-color, 0.1);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &--twitter{
-    background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  &:focus{
+    outline: auto;
   }
 
-  &--facebook{
-    background: url("../img/icon-facebook.svg") no-repeat 50% 50%;
+  &:hover{
+    border: 3px solid $text-color;
   }
 
-  &--youtube{
-    background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
+  &:active{
+    opacity: 0.1;
   }
 }

@@ -6,15 +6,45 @@
 .page-header__logo{
   position: absolute;
   display: flex;
-  height: $menu-height-mobile; 
+  height: $menu-height-mobile;
+  height: auto;
   left: 20px;
+  top: 23px;
+  align-items: center;
+  color: $text-color-white;
+
+  &[href]:hover{
+    color: $text-color-akcent;
+  }
+
+  &[href]:active{
+    color: $text-color-white;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width){
-    height: $menu-height-tablet; 
+    height: $menu-height-tablet;
+    top: 0;
   }
 
   @media (min-width: $desktop-width){
     height: $menu-height-desktop;
     left: 130px;
+  }
+}
+
+.page-header__logo-img{
+  width: 73px;
+  height: 23px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width){
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width){
+    width: 147px;
+    height: 40px;
   }
 }

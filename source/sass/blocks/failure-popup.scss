@@ -1,79 +1,83 @@
 .failure-popup{
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-style: normal;
-	box-shadow: 0px 7px 15px $popup-shadow-color;
-	border-radius: 1px;
-	max-width: 700px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-style: normal;
+  box-shadow: 0px 7px 15px $popup-shadow-color;
+  border-radius: 1px;
+  max-width: 700px;
+  left: 0;
+  right: 0;
+  top: 25%;
+  position: fixed;
+  background-color: $white-bg;
 
-	@media (min-width: $tablet-width){
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 460px;
-  	}
+  @media(min-width: $tablet-width){
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+  }
 
-  	@media (min-width: $desktop-width){
-		max-width: 700px;
-  	}
+  @media(min-width: $desktop-width){
+    max-width: 700px;
+  }
 }
 
 .failure-popup__header{
-	padding: 0;
-	margin: 0;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 24px;
-	text-align: center;
-	color: $text-color-black;
-	padding-top: 44px;
-	padding-left: $mobile-padding-left;
-	padding-right: $mobile-padding-right;
-	padding-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color-black;
+  padding-top: 44px;
+  padding-left: $mobile-padding-left;
+  padding-right: $mobile-padding-right;
+  padding-bottom: 30px;
 
-	@media (min-width: $tablet-width){
-		font-size: 30px;
-		line-height: 40px;
-		padding-left: 65px;
-		padding-right: 65px;
-  	}
+  @media(min-width: $tablet-width){
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
 }
 
 .failure-popup__text{
-	padding: 0;
-	margin: 0;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 24px;
-	text-align: center;
-	color: $text-color;
-	padding-left: $mobile-padding-left;
-	padding-right: $mobile-padding-right;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color;
+  padding-left: $mobile-padding-left;
+  padding-right: $mobile-padding-right;
 
-	@media (min-width: $tablet-width){
-		font-size: 18px;
-		line-height: 24px;
-  	}
+  @media(min-width: $tablet-width){
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-	@media (min-width: $desktop-width){
-		min-height: 105px;
-		width: 350px;
-		margin: auto;
-	}
+  @media(min-width: $desktop-width){
+    min-height: 105px;
+    width: 350px;
+    margin: auto;
+  }
 }
 
 .failure-popup__button-wrapper{
-	padding-left: $mobile-padding-left;
-	padding-right: $mobile-padding-right;
-	padding-top: 40px;
-	padding-bottom: 50px;
-	border-radius: 0px 0px 1px 1px;
+  padding-left: $mobile-padding-left;
+  padding-right: $mobile-padding-right;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  border-radius: 0px 0px 1px 1px;
 
-	@media (min-width: $tablet-width){
-		text-align: center;
-  	}
+  @media(min-width: $tablet-width){
+    text-align: center;
+  }
 
-  	@media (min-width: $desktop-width){
-  		padding-top: 50px;
-		background-color: $common-bg;
-  	}
-  	
+  @media(min-width: $desktop-width){
+    padding-top: 50px;
+    background-color: $common-bg;
+  }
 }

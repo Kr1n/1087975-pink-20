@@ -9,9 +9,6 @@
   overflow: hidden;
 }
 
-body{
-}
-
 img{
   max-width: 100%;
   height: auto;
@@ -21,7 +18,7 @@ a{
   text-decoration: none;
 }
 
-.container{  
+.container{
   position: relative;
   box-sizing: border-box;
   max-width: $max-width;
@@ -41,13 +38,76 @@ a{
 }
 
 .mobile-only{
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     display: none;
   }
 }
 
 .mobile-hidden{
-  @media (max-width: $tablet-width - 1px){
+  @media(max-width: $tablet-width - 1px){
     display: none;
   }
+}
+
+.tablet-hidden{
+  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1px){
+    display: none;
+  }
+}
+
+.desktop-only{
+  @media(max-width: $desktop-width - 1px){
+    display: none;
+  }
+}
+
+.tablet-only{
+  @media(max-width: $mobile-width - 1px)  {
+    display: none;
+  }
+
+  @media(min-width: $desktop-width){
+    display: none;
+  }
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+.for-mobile{
+  @media(max-width: $mobile-width - 1px){
+    display: inherit;
+  }
+}
+
+.for-desktop{
+  @media(min-width: $desktop-width){
+    display: inherit;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+@-webkit-keyframes bounce{
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);}
+  90%   {transform: translateY(-10px);}
+  100%  {transform: translateY(0);}
+}
+
+@keyframes bounce{
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);}
+  90%   {transform: translateY(-10px);}
+  100%  {transform: translateY(0);}
+}
+
+.popup-animation-apear{
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }

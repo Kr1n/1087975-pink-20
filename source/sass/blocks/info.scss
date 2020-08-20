@@ -6,20 +6,23 @@
 
 .info__text-wrapper{
   background-color: $white-bg;
-  padding-top: 22px;
+  padding-top: 10px;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
-  padding-bottom: 70px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width){
-    padding-top: 58px;
+    padding-top: 48px;
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width){
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
+    padding-top: 61px;
+    padding-bottom: 57px;
   }
 }
 
@@ -29,7 +32,7 @@
   line-height: 120%;
   color: $text-color;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width){
     font-size: 40px;
@@ -45,7 +48,7 @@
 
 .info__list-wrapper{
   background-color: $common-bg;
-  background-image: url("../img/bg-triangle-white.svg");
+  background-image: url("../img/svg/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -56,7 +59,7 @@
   padding: 0;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
-  padding-top: 82px;
+  padding-top: 78px;
   text-align: center;
   position: relative;
 
@@ -64,19 +67,25 @@
     content: "";
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
     width: 157px;
-    height: 286px;
+    height: 276px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 11px;
+
+    @media (min-resolution: 2dppx){
+      background: url("../img/iphone-screen-mobile@2x.png") no-repeat;
+      background-size: 157px auto;
+    }
   }
 
   @media (min-width: $tablet-width){
-    padding-left:  310px;
     text-align: left;
     min-height: 481px;
     box-sizing: border-box;
     padding-left: 50%;
     padding-right: $tablet-padding-right;
+    padding-top: 72px;
 
     &::before{
       content: "";
@@ -89,6 +98,11 @@
       position: absolute;
       bottom: 0;
       left: $tablet-padding-left;
+
+      @media (min-resolution: 2dppx){
+        background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat;
+        background-size: 268px auto;
+      }
     }
 
     &::after{
@@ -102,7 +116,7 @@
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
     text-align: center;
-    grid-gap: 15px;
+    grid-gap: 23px;
     padding-top: 0;
 
     &::after{
@@ -115,9 +129,7 @@
   }
 }
 
-
 .info__item{
-
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px){
     grid-column: 2/3;
   }
@@ -125,7 +137,7 @@
   @media (min-width: $desktop-width){
     &::before{
       content: "";
-      width: 292px;
+      width: 285px;
       height: 302px;
       display: block;
       margin-left: auto;
@@ -138,6 +150,11 @@
   .info__item:nth-of-type(#{$i}){
     &::before{
       background: url("../img/iphone-screen-#{$i}-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: 2dppx){
+        background: url("../img/iphone-screen-#{$i}-desktop@2x.png") no-repeat;
+        background-size: 292px auto;
+      }
     }
   }
 }
@@ -146,11 +163,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
 
   @media (min-width: $desktop-width){
-    padding-top: 50px;
-    padding-bottom: 35px;
+    padding-top: 56px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -161,7 +180,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width){
     padding-bottom: 35px;
@@ -170,5 +189,7 @@
   @media (min-width: $desktop-width){
     font-size: 18px;
     line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

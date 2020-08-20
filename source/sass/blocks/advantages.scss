@@ -1,92 +1,76 @@
 .advantages{
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-style: normal;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages__item{
-	background-color: $white-bg;
-	border-top: 1px solid $common-bg;
-	border-bottom: 1px solid $common-bg;
-	box-sizing: border-box;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 20px;
-	position: relative;
-	min-height: 45px;
+  background-color: $white-bg;
+  border-top:  1px solid $common-bg;
+  border-bottom:  1px solid $common-bg;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 18px;
 
-	&--included{
-		&::after{
-			content: "";
-			position: absolute;
-			width: 31px;
-			height: 21px;
-			right: 13px;
-			top: calc(50% - 10px);
-			background: url("../img/icon-yes.svg") 0 0 no-repeat;
-			background-size: contain;
-		}
-	}
+  @media(min-width: $tablet-width){
+    min-height: 47px;
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
 
-	&--not-included{
-		&::after{
-			content: "";
-			position: absolute;
-			width: 27px;
-			height: 27px;
-			background: url("../img/icon-no.svg") 0 0 no-repeat;
-			background-size: contain;
-			right: 18px;
-			top: calc(50% - 13px);
-		}
-	}
+  @media(min-width: $desktop-width){
+    min-height: 61px;
+    padding-left: 20px;
+  }
 
-	@media (min-width: $tablet-width){
-		padding-top: 7px;
-		padding-bottom: 0;
+  &--included{
+    @media(min-width: $tablet-width){
+      justify-content: center;
+    }
+  }
 
-		&--included{
-			&::after{
-				right: calc(50% - 15px);
-			}
-		}
-
-		&--not-included{
-			&::after{
-				right: calc(50% - 13px);
-			}
-		}
-	}
-}
-
-.advantages__item-text{
-	color: $text-color;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-
-	@media (min-width: $tablet-width){
-		text-transform: none;
-	}
-
-	 @media (min-width: $desktop-width){
-	  	font-weight: normal;
-		font-size: 18px;
-		line-height: 30px;
+  &--not-included{
+    @media(min-width: $tablet-width){
+      justify-content: center;
+    }
   }
 }
 
-.advantages__item--included .advantages__item-text{
-	@media (min-width: $tablet-width){
-		display: none;
-	}
+
+
+.advantages__item-text{
+  color: $text-color;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media(min-width: $tablet-width){
+    text-transform: none;
+  }
+
+  @media(min-width: $desktop-width){
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
-.advantages__item--not-included .advantages__item-text{
-	@media (min-width: $tablet-width){
-		display: none;
-	}
+.advantages__item--included.advantages__item-text{
+  @media(min-width: $tablet-width){
+    display: none;
+  }
+}
+
+.advantages__item--not-included.advantages__item-text{
+  @media(min-width: $tablet-width){
+    display: none;
+  }
 }

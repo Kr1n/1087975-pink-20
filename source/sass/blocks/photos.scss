@@ -1,6 +1,17 @@
 .photos{
   background-color: $white-bg;
   color: $text-color;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width){
+    padding-top: 76px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 89px;
+    padding-bottom: 33px;
+  }
 }
 
 .photos__list{
@@ -12,7 +23,8 @@
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  grid-gap: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
 
   @media (min-width: $tablet-width){
     grid-template-columns: 1fr 1fr;
@@ -23,6 +35,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 130px;
     padding-right: 130px;
+    row-gap: 54px;
   }
 }
 
@@ -30,6 +43,7 @@
   grid-column: 1 / -1;
 
   @media (min-width: $tablet-width){
+    margin-bottom: 33px;
 
     & .photos__item-wrapper{
       grid-template-columns: 1fr 1fr;
@@ -48,46 +62,106 @@
       order: -1;
       margin: 0;
       margin-left: auto;
+      gap: 18px;
     }
+  }
+
+  @media (min-width: $desktop-width){
+    margin-bottom: -6px;
   }
 
 }
 
 .photos__item{
   background-color: $common-bg;
+  position: relative;
+
+  &--panorama-for-today::after{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    color: $text-color-white;
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-color: $text-color-akcent;
+    content: "Панорама дня";
+    padding: 6px 20px 6px 19px;
+    box-sizing: border-box;
+    right: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width){
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width){
+      top: 54px;
+    }
+  }
 }
 
 .photos__item-wrapper{
-  min-height: 155px;
   box-sizing: border-box;
+  padding-top: 18px;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-bottom: 18px;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  padding-top: 20px;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 23px;
+    padding-bottom: 24px;
     padding-left: 30px;
     padding-right: 30px;
+    min-height: 155px;
+
+    .photos__item--wide &{
+      min-height: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 25px;
+    padding-bottom: 21px;
   }
 }
 
 .photos__item-link{
   display: block;
   text-align: center;
+  min-height: 180px;
+  background-color: grey;
+
+  @media (min-width: $tablet-width){
+    min-height: 180px;
+  }
+
+  @media (min-width: $desktop-width){
+    min-height: 180px;
+  }
+
+  &--panorama{
+    min-height: 137px;
+  }
 }
 
 .photos__item-photo{
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.photos__item-photo img{
   width: 100%;
+  display: block;
 
+  &--panorama{
+    @media (min-width: $tablet-width){
+      min-height: 509px;
+    }
+  }
 }
 
 .photos__item-header{
@@ -126,4 +200,17 @@
   text-transform: uppercase;
   color: $text-color-akcent;
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 18px;
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width){
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0;
+    padding-top: 0px;
+  }
 }
