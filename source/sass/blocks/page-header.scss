@@ -9,7 +9,7 @@
   height: $menu-height-mobile;
   height: auto;
   left: 20px;
-  top: 23px;;
+  top: 23px;
   align-items: center;
   color: $text-color-white;
 
@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-width){
     height: $menu-height-tablet;
+    top: 0;
   }
 
   @media (min-width: $desktop-width){

@@ -18,12 +18,14 @@
   display: block;
   cursor: pointer;
   height: $menu-height-mobile;
-  width: 62px;
+  width: 90px;
   background-color: transparent;
   border: none;
   padding: 0;
   margin: 0;
   margin-left: auto;
+  box-sizing: border-box;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width){
     height: $menu-height-tablet;
@@ -71,6 +73,10 @@
 
   @media (max-width: $desktop-width - 1px){
     background-color: $text-color;
+  }
+
+  &  .main-nav__toggle{
+    width: 62px;
   }
 
   & .main-nav__list{
