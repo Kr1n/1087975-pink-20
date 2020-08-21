@@ -15,7 +15,7 @@
   @media (min-width: $desktop-width){
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
-    padding-top: 79px;
+    padding-top: 80px;
     padding-bottom: 0px;
   }
 }
@@ -497,9 +497,8 @@
   @media (min-width: $desktop-width){
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: column;
-    grid-column-gap: 0;
+    grid-column-gap: 53px;
   }
 }
 

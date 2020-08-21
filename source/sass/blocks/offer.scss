@@ -126,6 +126,16 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  &:hover{
+    color: $text-color;
+    text-decoration-line: underline;
+  }
+
+  &:active{
+    color: rgba($text-color, 0.3);
+    text-decoration-line: none;
+  }
 }
 
 .offer__wrapper{
