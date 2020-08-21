@@ -17,6 +17,7 @@
   padding-right: $mobile-padding-right;
   padding-bottom: 77px;
 
+
   @media (min-width: $tablet-width){
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-size: cover;
@@ -30,8 +31,9 @@
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
     padding-top: 177px;
-    padding-bottom: 59px;
-    margin-bottom: 66px;
+    padding-bottom: 0;
+    margin-bottom: 64px;
+    min-height: 440px;
   }
 
   @media (min-width: $desktop-width){
@@ -40,8 +42,8 @@
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
     padding-top: $menu-height-desktop + 59px;
-    padding-bottom: 89px;
-
+    padding-bottom: 0;
+    min-height: 394px;
   }
 
   @media (min-resolution: 2dppx){
@@ -77,7 +79,7 @@
   @media (min-width: $tablet-width){
     font-size: 18px;
     line-height: 30px;
-    padding-top: 25px;
+    padding-top: 27px;
     padding-left: $tablet-padding-left + 30px;
     padding-right: $tablet-padding-right + 30px;
   }
@@ -85,6 +87,7 @@
   @media (min-width: $desktop-width){
     padding-left: $desktop-padding-left + 70px;
     padding-right: $desktop-padding-right + 70px;
+    padding-top: 25px;
   }
 }
 

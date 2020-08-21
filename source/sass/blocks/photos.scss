@@ -5,11 +5,11 @@
 
   @media (min-width: $tablet-width){
     padding-top: 76px;
-    padding-bottom: 38px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $desktop-width){
-    padding-top: 89px;
+    padding-top: 91px;
     padding-bottom: 33px;
   }
 }
@@ -29,6 +29,7 @@
   @media (min-width: $tablet-width){
     grid-template-columns: 1fr 1fr;
     justify-content: stretch;
+    row-gap: 19px;
   }
 
   @media (min-width: $desktop-width){
@@ -68,6 +69,10 @@
 
   @media (min-width: $desktop-width){
     margin-bottom: -6px;
+
+    & .photos__item-wrapper{
+
+    }
   }
 
 }
@@ -118,7 +123,7 @@
     padding-bottom: 24px;
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 155px;
+    min-height: 156px;
 
     .photos__item--wide &{
       min-height: auto;
@@ -127,7 +132,8 @@
 
   @media (min-width: $desktop-width){
     padding-top: 25px;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
+    padding-left: 28px;
   }
 }
 
@@ -161,6 +167,10 @@
     @media (min-width: $tablet-width){
       min-height: 509px;
     }
+  }
+
+  @media (min-width: $desktop-width){
+    min-height: auto;
   }
 }
 
