@@ -36,6 +36,12 @@
   }
 
   &:active{
-    opacity: 0.1;
+    border: 3px solid rgba($text-color, 0.1);
+  }
+}
+
+.social__img{
+  &:active{
+    opacity: 0.3;
   }
 }
