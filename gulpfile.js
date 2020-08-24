@@ -112,11 +112,11 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-  clean, webp, copy, styles, sprite, server, watcher
+  clean, webp, copy, styles, sprite, server
 );
 
 exports.default = gulp.series(
-  styles, server, watcher
+  clean, copy, styles, sprite, server, watcher
 );
 
 
