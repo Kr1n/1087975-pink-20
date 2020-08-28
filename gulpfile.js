@@ -42,9 +42,9 @@ exports.copy = copy;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon*.svg")
-        .pipe(svgstore())
-        .pipe(rename("sprite.svg"))
-        .pipe(gulp.dest("build/img"))
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"))
 }
 exports.sprite = sprite;
 
@@ -52,8 +52,8 @@ exports.sprite = sprite;
 
 const webp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-        .pipe(createwebp({quality: 90}))
-        .pipe(gulp.dest("source/img"))
+  .pipe(createwebp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
 }
 exports.webp = webp;
 
@@ -61,11 +61,11 @@ exports.webp = webp;
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-        .pipe(imagemin([
-          imagemin.optipng({optimizationLevel: 3}),
-          imagemin.jpegtran({progressive: true}),
-          imagemin.svgo()
-          ]))
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.svgo()
+    ]))
 }
 exports.images = images;
 
@@ -73,17 +73,17 @@ exports.images = images;
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer()
     ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+  .pipe(csso())
+  .pipe(rename("style.min.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/css"))
+  .pipe(sync.stream());
 }
 
 exports.styles = styles;
@@ -113,10 +113,10 @@ const watcher = () => {
 
 exports.build = gulp.series(
   clean, copy, styles, sprite
-);
+  );
 
 exports.default = gulp.series(
-  clean, copy, styles, sprite, server, watcher
-);
+  build, server, watcher
+  );
 
 
