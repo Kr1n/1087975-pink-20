@@ -13,6 +13,7 @@ const imagemin = require("gulp-imagemin");
 const createwebp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require('gulp-uglify');
 
 // Clean
 
@@ -44,7 +45,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("source/img"))
 }
 exports.sprite = sprite;
 
@@ -88,6 +89,17 @@ const styles = () => {
 
 exports.styles = styles;
 
+// JS compress
+
+const compress = () => {
+  return gulp.src('source/js/*.js')
+  .uglify()
+  .pipe(rename("scritp.min.css"))
+  .gulp.dest('source/js/')
+}
+
+exports.compress = compress;
+
 // Server
 
 const server = (done) => {
@@ -118,5 +130,3 @@ exports.build = gulp.series(
 exports.default = gulp.series(
   build, server, watcher
   );
-
-
