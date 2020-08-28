@@ -3,6 +3,8 @@
 
   "rules": {
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "block-opening-brace-space-before" : "always-single-line",
+    "length-zero-no-unit" : [ignore: ["custom-properties"]]
   }
 }
