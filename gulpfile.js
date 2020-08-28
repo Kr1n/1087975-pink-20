@@ -29,7 +29,7 @@ const copy = () => {
     "source/js/**",
     "source/*.ico",
     "source/*.html",
-    "source/css/normalize.css"
+    "source/css/normalize.min.css"
     ],
     {
       base: "source"
@@ -112,11 +112,11 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-  clean, webp, copy, styles, sprite, server, watcher
+  clean, copy, styles, sprite
 );
 
 exports.default = gulp.series(
-  styles, server, watcher
+  clean, copy, styles, sprite, server, watcher
 );
 
 
