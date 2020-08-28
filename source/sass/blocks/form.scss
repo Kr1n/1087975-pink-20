@@ -38,6 +38,14 @@
 
   &--apps{
     padding-bottom: 8px;
+
+    @media (min-width: $tablet-width){
+      order: -2;
+    }
+
+    @media (min-width: $desktop-width){
+      grid-column: auto;
+    }
   }
 
   &--feedback{
@@ -352,7 +360,6 @@
   }
 
   @media (min-width: $desktop-width){
-
     .form__fieldset--apps &{
       margin-right: -40px;
       margin-left: -38px;
@@ -468,16 +475,6 @@
 .form__fieldset--name{
   @media (min-width: $tablet-width){
     order: -3;
-  }
-
-  @media (min-width: $desktop-width){
-    grid-column: auto;
-  }
-}
-
-.form__fieldset--apps{
-  @media (min-width: $tablet-width){
-    order: -2;
   }
 
   @media (min-width: $desktop-width){
