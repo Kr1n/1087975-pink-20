@@ -15,6 +15,16 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const uglify = require('gulp-uglify');
 
+const htmlmin = require('gulp-htmlmin');
+
+// HTML mini
+
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+};
+
 // Clean
 
 const clean = () => {
@@ -28,7 +38,6 @@ const copy = () => {
     "source/fonts/**.*{woff,woff2}",
     "source/img/**",
     "source/*.ico",
-    "source/*.html",
     "source/css/normalize.min.css"
     ],
     {
@@ -123,7 +132,7 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-  clean, webp, compress, copy, styles, sprite
+  clean, webp, html, compress, copy, styles, sprite
   );
 
 exports.default = gulp.series(
