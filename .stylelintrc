@@ -5,6 +5,9 @@
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}],
     "block-opening-brace-space-before" : "always-single-line",
-    "length-zero-no-unit" : [ignore: ["custom-properties"]]
+    "length-zero-no-unit" : [ignore: ["custom-properties"]],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for"]
+    }]
   }
 }

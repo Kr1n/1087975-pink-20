@@ -107,10 +107,8 @@
     align-items: center;
     padding: 0;
     padding-right: 20px;
+    padding-bottom: 24px;
     grid-gap: 29px;
-    margin-top: 6px;
-    margin-bottom: 24px;
-    padding-bottom: 21px;
 
     &::after{
       width: 100%;
@@ -256,7 +254,7 @@
 
   &--contrast{
     width: 16px;
-    height: auto;
+    height: 22px;
     margin: auto;
 
     @media (min-width: $desktop-width){
@@ -265,8 +263,8 @@
   }
 
   &--fill{
-    width: 24px;
-    height: auto;
+    width: 28px;
+    height: 22px;
     margin: auto;
 
     @media (min-width: $desktop-width){
@@ -276,7 +274,7 @@
 
   &--crop{
     width: 24px;
-    height: auto;
+    height: 22px;
     margin: auto;
 
     @media (min-width: $desktop-width){
@@ -312,14 +310,20 @@
 
 .upload__input{
   &--crop{
-    left: 80%;
+    left: 73%;
   }
 
   &--fill{
-    left: 15%;
+    left: 12%;
   }
 
   &--contrast{
-    left: 50%;
+    left: 48%;
   }
+}
+
+.upload__input-wrapper{
+  display: grid;
+  gap: 26px;
+  padding-top: 8px;
 }
