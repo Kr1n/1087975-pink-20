@@ -65,6 +65,7 @@
 
   &::after{
     content: "";
+    background-color: $intro-bg;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
     width: 157px;
     height: 276px;
@@ -89,6 +90,7 @@
 
     &::before{
       content: "";
+      background-color: $intro-bg;
       background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
       width: 268px;
       height: 481px;
@@ -149,6 +151,7 @@
 @for $i from 1 through 3{
   .info__item:nth-of-type(#{$i}){
     &::before{
+      background-color: $intro-bg;
       background: url("../img/iphone-screen-#{$i}-desktop@1x.png") no-repeat;
 
       @media (min-resolution: 2dppx){
