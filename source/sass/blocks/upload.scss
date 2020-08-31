@@ -259,6 +259,9 @@
 
     @media (min-width: $desktop-width){
       width: 32px;
+      height: auto;
+      margin: 0;
+      padding-left: 6px;
     }
   }
 
@@ -269,6 +272,8 @@
 
     @media (min-width: $desktop-width){
       width: 54px;
+      height: auto;
+      margin: 0;
     }
   }
 
@@ -279,6 +284,8 @@
 
     @media (min-width: $desktop-width){
       width: 48px;
+      height: auto;
+      margin: 0;
     }
   }
 }
@@ -320,10 +327,30 @@
   &--contrast{
     left: 48%;
   }
+
+  @media (min-width: $desktop-width){
+    &--crop{
+      left: 24%;
+    }
+
+    &--fill{
+      left: 86%;
+    }
+
+    &--contrast{
+      left: 56%;
+    }
+  }
+
 }
 
 .upload__input-wrapper{
   display: grid;
   gap: 26px;
   padding-top: 8px;
+
+  @media (min-width: $desktop-width){
+    gap: 0;
+    padding-top: 0px;
+  }
 }
