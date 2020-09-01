@@ -113,7 +113,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width){
     padding-top: 23px;
     padding-bottom: 24px;
     padding-left: 30px;
