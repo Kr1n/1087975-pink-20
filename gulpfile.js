@@ -13,6 +13,17 @@ const imagemin = require("gulp-imagemin");
 const createwebp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require('gulp-uglify');
+
+const htmlmin = require('gulp-htmlmin');
+
+// HTML mini
+
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+};
 
 // Clean
 
@@ -26,9 +37,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**.*{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico",
-    "source/*.html",
     "source/css/normalize.min.css"
     ],
     {
@@ -42,9 +51,9 @@ exports.copy = copy;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon*.svg")
-        .pipe(svgstore())
-        .pipe(rename("sprite.svg"))
-        .pipe(gulp.dest("build/img"))
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"))
 }
 exports.sprite = sprite;
 
@@ -52,8 +61,8 @@ exports.sprite = sprite;
 
 const webp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-        .pipe(createwebp({quality: 90}))
-        .pipe(gulp.dest("source/img"))
+  .pipe(createwebp({quality: 90}))
+  .pipe(gulp.dest("build/img"))
 }
 exports.webp = webp;
 
@@ -61,11 +70,11 @@ exports.webp = webp;
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-        .pipe(imagemin([
-          imagemin.optipng({optimizationLevel: 3}),
-          imagemin.jpegtran({progressive: true}),
-          imagemin.svgo()
-          ]))
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.svgo()
+    ]))
 }
 exports.images = images;
 
@@ -73,20 +82,31 @@ exports.images = images;
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer()
     ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+  .pipe(csso())
+  .pipe(rename("style.min.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/css"))
+  .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// JS compress
+
+const compress = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(uglify())
+  .pipe(rename("script.min.js"))
+  .pipe(gulp.dest("build/js/"))
+}
+
+exports.compress = compress;
 
 // Server
 
@@ -112,11 +132,9 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-  clean, copy, styles, sprite
-);
+  clean, webp, html, compress, copy, styles, sprite
+  );
 
 exports.default = gulp.series(
-  clean, copy, styles, sprite, server, watcher
-);
-
-
+  exports.build, server, watcher
+  );

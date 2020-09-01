@@ -14,7 +14,7 @@
     padding-bottom: 49px;
     padding-top: 57px;
     margin-top: 70px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: 48.5% 1fr;
     grid-gap: 46px;
@@ -107,10 +107,8 @@
     align-items: center;
     padding: 0;
     padding-right: 20px;
+    padding-bottom: 24px;
     grid-gap: 29px;
-    margin-top: 6px;
-    margin-bottom: 24px;
-    padding-bottom: 21px;
 
     &::after{
       width: 100%;
@@ -123,7 +121,7 @@
     padding-right: 30px;
     grid-template-columns: 50px 1fr;
     grid-gap: 42px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 22px;
 
     &:nth-last-of-type(1)::after{
@@ -166,7 +164,7 @@
   }
 
   @media (min-width: $desktop-width){
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   &:hover{
@@ -256,31 +254,38 @@
 
   &--contrast{
     width: 16px;
-    height: auto;
+    height: 22px;
     margin: auto;
 
     @media (min-width: $desktop-width){
       width: 32px;
+      height: auto;
+      margin: 0;
+      padding-left: 6px;
     }
   }
 
   &--fill{
-    width: 24px;
-    height: auto;
+    width: 28px;
+    height: 22px;
     margin: auto;
 
     @media (min-width: $desktop-width){
       width: 54px;
+      height: auto;
+      margin: 0;
     }
   }
 
   &--crop{
     width: 24px;
-    height: auto;
+    height: 22px;
     margin: auto;
 
     @media (min-width: $desktop-width){
       width: 48px;
+      height: auto;
+      margin: 0;
     }
   }
 }
@@ -296,13 +301,14 @@
 
   @media (min-width: $desktop-width){
     display: flex;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 5px;
   }
 }
 
 .upload__button-icon{
   width: 100%;
+
   @media (min-width: $tablet-width){
     width: 100%;
     height: auto;
@@ -311,14 +317,39 @@
 
 .upload__input{
   &--crop{
-    left: 80%;
+    left: 73%;
   }
 
   &--fill{
-    left: 15%;
+    left: 12%;
   }
 
   &--contrast{
-    left: 50%;
+    left: 48%;
+  }
+
+  @media (min-width: $desktop-width){
+    &--crop{
+      left: 24%;
+    }
+
+    &--fill{
+      left: 86%;
+    }
+
+    &--contrast{
+      left: 56%;
+    }
+  }
+}
+
+.upload__input-wrapper{
+  display: grid;
+  gap: 26px;
+  padding-top: 8px;
+
+  @media (min-width: $desktop-width){
+    gap: 0;
+    padding-top: 0;
   }
 }

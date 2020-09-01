@@ -12,14 +12,14 @@
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
     padding-top: 93px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width){
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
     padding-top: 185px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }
 
@@ -49,7 +49,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width){

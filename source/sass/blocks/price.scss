@@ -9,11 +9,12 @@
   background-size: contain;
   padding-left: $mobile-padding-left;
   padding-right: $mobile-padding-right;
+  overflow: hidden;
 
   @media (min-width: $tablet-width){
     padding-left: $tablet-padding-left;
     padding-right: $tablet-padding-right;
-    background-position: 0px -35px;
+    background-position: 0 -35px;
     background-size: auto;
     padding-top: 112px;
     padding-bottom: 25px;
@@ -24,9 +25,8 @@
     padding-right: $desktop-padding-right;
     padding-top: 156px;
     padding-bottom: 53px;
-    background-position: 0px 0px;
+    background-position: 0 0;
   }
-  overflow: hidden;
 }
 
 .price__list{
@@ -42,7 +42,7 @@
   @media (min-width: $tablet-width){
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    transform: translate(0px);
+    transform: translate(0);
   }
 }
 
@@ -55,7 +55,7 @@
   overflow: hidden;
 
   @media (max-width: $tablet-width - 1px){
-    width: calc(100vw - #{$mobile-padding-right} - #{$mobile-padding-left)});
+    width: calc(100vw - #{$mobile-padding-right} - #{$mobile-padding-left});
   }
 
   &--hit::before{
