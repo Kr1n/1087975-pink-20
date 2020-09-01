@@ -16,7 +16,7 @@
     padding-left: $desktop-padding-left;
     padding-right: $desktop-padding-right;
     padding-top: 80px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }
 
@@ -54,10 +54,10 @@
 
   @media (min-width: $tablet-width){
     grid-column: 1 / -1;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 72px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     &--apps{
       padding-bottom: 20px;
@@ -75,8 +75,8 @@
     }
 
     &--apps{
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
       grid-column: auto;
     }
 
@@ -206,7 +206,7 @@
   }
 
   @media (min-width: $tablet-width){
-    padding-left: 0px;
+    padding-left: 0;
 
     .form__fieldset--contacts &{
       padding-left: 19px;
@@ -381,8 +381,8 @@
   padding-left: $mobile-padding-right;
 
   @media (min-width: $tablet-width){
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -420,7 +420,7 @@
     width: max-content;
     margin-left: auto;
     padding-top: 0;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     align-self: center;
   }
 }
@@ -446,20 +446,20 @@
 
   &:nth-last-of-type(1){
     @media (min-width: $tablet-width){
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
   & .form__label{
     @media (min-width: $tablet-width){
-      padding-bottom: 0px;
+      padding-bottom: 0;
       padding-right: 20px;
     }
   }
 
   & .form__input{
     @media (min-width: $tablet-width){
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
