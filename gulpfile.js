@@ -133,8 +133,8 @@ const watcher = () => {
 
 exports.build = gulp.series(
   clean, webp, html, compress, copy, styles, sprite
-  );
+);
 
 exports.default = gulp.series(
   exports.build, server, watcher
-  );
+);
