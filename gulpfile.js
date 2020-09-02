@@ -21,7 +21,7 @@ const htmlmin = require('gulp-htmlmin');
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: false }))
     .pipe(gulp.dest('build'));
 };
 
@@ -133,8 +133,8 @@ const watcher = () => {
 
 exports.build = gulp.series(
   clean, webp, html, compress, copy, styles, sprite
-  );
+);
 
 exports.default = gulp.series(
   exports.build, server, watcher
-  );
+);

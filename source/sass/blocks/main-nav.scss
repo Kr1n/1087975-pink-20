@@ -181,6 +181,10 @@
     .main-nav__item--active &{
       border-bottom: 2px solid $text-color-white;
     }
+
+    .main-nav__item--no-border &{
+      border-bottom: none;
+    }
   }
 
   &:focus{
