@@ -3,9 +3,9 @@
 <head class="page">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -22,8 +22,7 @@
       </a>
     </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
         <svg class="main-nav__toogle-img" width="50" height="24">
           <use class="main-nav__toggle-burger" xlink:href="img/sprite.svg#icon-menu-burger"></use>
           <use class="main-nav__toggle-cross" xlink:href="img/sprite.svg#icon-menu-cross"></use>
@@ -48,19 +47,18 @@
 
   <main class="page-main">
 
-    <h1 class="page-main__header">Фотографии<br>пользователей</h1>
+    <h1 class="page-main__header page-main__header--photos">Фотографии пользователей</h1>
     <div class="container">
-      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! <br class="tablet-hidden">Видите, как не хватает ваших?</p>
-
+      <p class="page-main__text page-main__text--photos">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <div class="photos">
         <ul class="photos__list">
           <li class="photos__item photos__item--wide photos__item--panorama-for-today">
             <a class="photos__item-link photos__item-link--panorama full-width" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/panorama-desktop@1x.webp, img/photo/panorama-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/panorama-desktop@1x.webp, img/photo/panorama-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/panorama-tablet@1x.webp, img/photo/panorama-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/panorama-mobile@1x.webp, img/photo/panorama-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/panorama-desktop@1x.jpg, img/photo/panorama-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/panorama-desktop@1x.jpg, img/photo/panorama-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/panorama-tablet@1x.jpg, img/photo/panorama-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo photos__item-photo--panorama" src="img/photo/panorama-mobile@1x.jpg" srcset="img/photo/panorama-mobile@2x.jpg 2x" width="316" height="135" alt="Длинный узкий мост над рекой"/>
               </picture>
@@ -83,10 +81,10 @@
           <li class="photos__item">
             <a class="photos__item-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-car-desktop@1x.webp, img/photo/photo-car-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-car-desktop@1x.webp, img/photo/photo-car-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-car-tablet@1x.webp, img/photo/photo-car-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/photo-car-mobile@1x.webp, img/photo/photo-car-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/photo-car-desktop@1x.jpg, img/photo/photo-car-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/photo-car-desktop@1x.jpg, img/photo/photo-car-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/photo-car-tablet@1x.jpg, img/photo/photo-car-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo" src="img/photo/photo-car-mobile@1x.jpg" srcset="img/photo/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Машина на фоне здания">
               </picture>
@@ -109,10 +107,10 @@
           <li class="photos__item">
             <a class="photos__item-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-drumset-desktop@1x.webp, img/photo/photo-drumset-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-drumset-desktop@1x.webp, img/photo/photo-drumset-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-drumset-tablet@1x.webp, img/photo/photo-drumset-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/photo-drumset-mobile@1x.webp, img/photo/photo-drumset-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/photo-drumset-desktop@1x.jpg, img/photo/photo-drumset-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/photo-drumset-desktop@1x.jpg, img/photo/photo-drumset-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/photo-drumset-tablet@1x.jpg, img/photo/photo-drumset-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo" src="img/photo/photo-drumset-mobile@1x.jpg" srcset="img/photo/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Музыкальные ударная установка">
               </picture>
@@ -135,10 +133,10 @@
           <li class="photos__item">
             <a class="photos__item-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-window-desktop@1x.webp, img/photo/photo-window-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-window-desktop@1x.webp, img/photo/photo-window-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-window-tablet@1x.webp, img/photo/photo-window-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/photo-window-mobile@1x.webp, img/photo/photo-window-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/photo-window-desktop@1x.jpg, img/photo/photo-window-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/photo-window-desktop@1x.jpg, img/photo/photo-window-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/photo-window-tablet@1x.jpg, img/photo/photo-window-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo" src="img/photo/photo-window-mobile@1x.jpg" srcset="img/photo/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Стеклянная крыша с видом на голубое небо">
               </picture>
@@ -161,10 +159,10 @@
           <li class="photos__item">
             <a class="photos__item-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-fair-desktop@1x.webp, img/photo/photo-fair-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-fair-desktop@1x.webp, img/photo/photo-fair-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-fair-tablet@1x.webp, img/photo/photo-fair-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/photo-fair-mobile@1x.webp, img/photo/photo-fair-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/photo-fair-desktop@1x.jpg, img/photo/photo-fair-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/photo-fair-desktop@1x.jpg, img/photo/photo-fair-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/photo-fair-tablet@1x.jpg, img/photo/photo-fair-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo" src="img/photo/photo-fair-mobile@1x.jpg" srcset="img/photo/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Рынок - 'Кубанская бахча'">
               </picture>
@@ -187,10 +185,10 @@
           <li class="photos__item">
             <a class="photos__item-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-pov-desktop@1x.webp, img/photo/photo-pov-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-pov-desktop@1x.webp, img/photo/photo-pov-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-pov-tablet@1x.webp, img/photo/photo-pov-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/photo-pov-mobile@1x.webp, img/photo/photo-pov-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/photo-pov-desktop@1x.jpg, img/photo/photo-pov-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/photo-pov-desktop@1x.jpg, img/photo/photo-pov-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/photo-pov-tablet@1x.jpg, img/photo/photo-pov-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo" src="img/photo/photo-pov-mobile@1x.jpg" srcset="img/photo/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Гдето в горах">
               </picture>
@@ -213,10 +211,10 @@
           <li class="photos__item">
             <a class="photos__item-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-wing-desktop@1x.webp, img/photo/photo-wing-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-wing-desktop@1x.webp, img/photo/photo-wing-desktop@2x.webp 2x"/>
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-wing-tablet@1x.webp, img/photo/photo-wing-tablet@2x.webp 2x"/>
                 <source type="image/webp" srcset="img/photo/photo-wing-mobile@1x.webp, img/photo/photo-wing-mobile@2x.webp 2x"/>
-                <source media="(min-width: 1200px)" srcset="img/photo/photo-wing-desktop@1x.jpg, img/photo/photo-wing-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 960px)" srcset="img/photo/photo-wing-desktop@1x.jpg, img/photo/photo-wing-desktop@2x.jpg 2x"/>
                 <source media="(min-width: 660px)" srcset="img/photo/photo-wing-tablet@1x.jpg, img/photo/photo-wing-tablet@2x.jpg 2x"/>
                 <img class="photos__item-photo" src="img/photo/photo-wing-mobile@1x.jpg" srcset="img/photo/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Вид на крыло самолета в небе из элюминатора">
               </picture>
@@ -238,15 +236,16 @@
 
         </ul>
       </div>
-      <p class="page-main__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="page-main__text">Затмите их всех!</p>
+      <p class="page-main__text">Выкладывайте все, что накопилось в телефоне!</p>
 
       <div class="upload">
         <a class="upload__link">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-road-desktop@1x.webp, img/photo/photo-road-desktop@2x.webp 2x"/>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo/photo-road-desktop@1x.webp, img/photo/photo-road-desktop@2x.webp 2x"/>
             <source type="image/webp" media="(min-width: 660px)" srcset="img/photo/photo-road-tablet@1x.webp, img/photo/photo-road-tablet@2x.webp 2x"/>
             <source type="image/webp" srcset="img/photo/photo-road-mobile@1x.webp, img/photo/photo-road-mobile@2x.webp 2x"/>
-            <source media="(min-width: 1200px)" srcset="img/photo/photo-road-desktop@1x.jpg, img/photo/photo-road-desktop@2x.jpg 2x"/>
+            <source media="(min-width: 960px)" srcset="img/photo/photo-road-desktop@1x.jpg, img/photo/photo-road-desktop@2x.jpg 2x"/>
             <source media="(min-width: 660px)" srcset="img/photo/photo-road-tablet@1x.jpg, img/photo/photo-road-tablet@2x.jpg 2x"/>
             <img class="upload__image" src="img/photo/photo-road-mobile@1x.jpg" srcset="img/photo/photo-road-mobile@2x.jpg 2x" alt="Загруженная картинка">
           </picture>

@@ -88,6 +88,13 @@
   }
 }
 
+.price__wrapper{
+  @media (min-width: $desktop-width){
+    max-width: $max-width;
+    margin: auto;
+  }
+}
+
 .price__description{
   background-color: $text-color;
   text-align: center;
