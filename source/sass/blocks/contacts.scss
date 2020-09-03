@@ -26,12 +26,10 @@
   line-height: 120%;
   color: $text-color;
 
-
   @media (min-width: $tablet-width){
     font-weight: 300;
     font-size: 40px;
     line-height: 54px;
-
   }
 
   @media (min-width: $desktop-width){
